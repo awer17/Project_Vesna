@@ -1,0 +1,117 @@
+:root{
+    --color-green: #545A2F;
+    --color-pale-green: #99A18E;
+    --color-brown: #63533E;
+    --color-black: #1A1A18;
+    --colo-white: #fff;
+    --font-1: 70px;
+    --font-2: 58px;
+    --font-3: 48px;
+    --font-4: 38px;
+    --font-5: 24px;
+    --font-6: 18px;
+}
+
+
+
+
+.center{
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+
+
+/*header*/
+
+
+
+.wrapper{
+    max-width: 1920px;
+}
+
+header{
+    background-image: url(../images/img/bg-headar.jpg);   
+    margin-top: 28px;
+}
+
+header .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .wrap img{
+    margin: 21px 0;
+
+}
+
+
+header .wrap .item-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .wrap .item-left .menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .wrap .item-left .menu li a{
+    text-decoration: none;
+    font-family: 'Geometria';
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--font-5);
+    line-height: 100%;
+    color: var(--colo-white);
+    margin-right: 78px;
+    transition: 0.8s;
+}
+
+header .wrap .item-left .menu li a:hover{
+   text-decoration:underline;
+}
+
+header .wrap button.tel{
+    display: block;
+    padding: 15px 28px;
+    border: none;
+    background-color: var(--colo-white);
+    color: var(--color-black);
+    font-family:'Noah';
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-5);
+    line-height: 30px;
+    transition: 0.8s;
+}
+
+header .wrap button.tel:hover{
+    background-color: var(--color-green);
+    color: var(--colo-white);
+}
+
+header .wrap button.consultation{
+    border: none;
+    background: none;
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 7px;
+    color: var(--colo-white);
+    transition: 0.8s;
+}
+
+header .wrap button.consultation:hover{
+    text-decoration:underline;
+}
+
+header .wrap .menu-icon{
+    display: none;
+}
+
+
