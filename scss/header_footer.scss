@@ -13,13 +13,21 @@
 }
 
 
-
+@mixin onlylange($w) {
+    @media only screen and (max-width: $w)
+    {
+        @content;       
+    }
+}
 
 
 
 .center{
     max-width: 1720px;
     margin: 0 auto;
+    @include onlylange(1900px){
+        width: 95%;
+    }       
 }
 
 
@@ -29,7 +37,9 @@
 
 
 .wrapper{
+    margin: 0 auto;
     max-width: 1920px;
+    background: #1A1A18;
 }
 
 header{   
@@ -174,13 +184,75 @@ header .wrap .menu-icon{
 }
 
 $green: #545A2F;
-$green: #99A18E;
+$pale_green: #99A18E;
 $brown: #63533E;
 $black: #1A1A18;
-$colo-white: #fff;
+$white: #fff;
 $font-1: 70px;
 $font-2: 58px;
 $font-3: 48px;
 $font-4: 38px;
 $font-5: 24px;
 $font-6: 18px;
+
+
+/*footer*/
+footer{
+    background: $green ;
+    width: 100%;
+    padding: 22px 0;
+    
+    .footer_wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  calc(96px + 25px) 24px;
+        row-gap: 48px;
+        .contact{
+            align-self: flex-end;
+            a{
+                display: block;
+                margin-top: 22px;
+                text-decoration: none;
+                font-family: 'Geometria';
+                font-weight: 400;
+                font-style: 20px;
+                color: $white;
+            }
+        }
+        .logo{
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        .networks{
+            img{
+                display: block;
+                margin-top: 18px;
+                margin-left: auto;
+            }
+        }
+        .copy{
+            font-family: 'Noah';
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $white;
+            opacity: 0.7;
+        }
+        .privacy{
+            grid-column: 3;
+            a{
+                display: block;
+                font-family: 'Noah';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $white;
+                text-decoration: none;
+                text-align: right;
+            }
+            
+        }
+    }
+}
