@@ -1,0 +1,182 @@
+:root {
+  --color-green: #545A2F;
+  --color-pale-green: #99A18E;
+  --color-brown: #63533E;
+  --color-black: #1A1A18;
+  --colo-white: #fff;
+  --font-1: 70px;
+  --font-2: 58px;
+  --font-3: 48px;
+  --font-4: 38px;
+  --font-5: 24px;
+  --font-6: 18px;
+}
+
+.center {
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+/*header*/
+.wrapper {
+  max-width: 1920px;
+}
+
+header {
+  margin-top: 28px;
+}
+
+header .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .wrap img {
+  margin: 21px 0;
+}
+
+header .wrap .item-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .wrap .item-left .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .wrap .item-left .menu li a {
+  text-decoration: none;
+  font-family: 'Geometria';
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--font-5);
+  line-height: 100%;
+  color: var(--colo-white);
+  margin-right: 78px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+header .wrap .item-left .menu li a:hover {
+  text-decoration: underline;
+}
+
+header .wrap button.tel {
+  display: block;
+  padding: 15px 28px;
+  border: none;
+  background-color: var(--colo-white);
+  color: var(--color-black);
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-5);
+  line-height: 30px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+header .wrap button.tel:hover {
+  background-color: var(--color-green);
+  color: var(--colo-white);
+}
+
+header .wrap button.consultation {
+  border: none;
+  background: none;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 7px;
+  color: var(--colo-white);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+header .wrap button.consultation:hover {
+  text-decoration: underline;
+}
+
+header .wrap .menu-icon {
+  display: none;
+}
+
+/*secton hero*/
+.hero {
+  background-image: url(../images/img/bg-headar.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: -179px;
+}
+
+.hero .bg-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5.85%, rgba(0, 0, 0, 0.5)), color-stop(61.53%, rgba(134, 134, 134, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
+  padding-top: 282px;
+  background-repeat: no-repeat;
+}
+
+.hero .bg-gradient .content-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(1920px - 292px);
+  margin-left: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .bg-gradient .content-hero .content-left {
+  width: 959px;
+}
+
+.hero .bg-gradient .content-hero .content-left .subtitle__hero {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-5);
+  line-height: 30px;
+  color: var(--colo-white);
+}
+
+.hero .bg-gradient .content-hero .content-left h1 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--font-1);
+  line-height: 87px;
+  color: var(--colo-white);
+  margin: 12px 0;
+}
+
+.hero .bg-gradient .content-hero .content-left h3 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: var(--font-3);
+  color: var(--colo-white);
+}
+/*# sourceMappingURL=header_footer.css.map */
