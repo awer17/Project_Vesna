@@ -416,6 +416,14 @@ footer .footer_wrap {
   row-gap: 48px;
 }
 
+@media only screen and (max-width: 1024px) {
+  footer .footer_wrap {
+    row-gap: 20px;
+    -ms-grid-rows: calc(56px + 25px) 24px;
+        grid-template-rows: calc(56px + 25px) 24px;
+  }
+}
+
 footer .footer_wrap .contact {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -431,9 +439,26 @@ footer .footer_wrap .contact a {
   color: #fff;
 }
 
+@media only screen and (max-width: 1204px) {
+  footer .footer_wrap .logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/span 2;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+}
+
 footer .footer_wrap .logo img {
   display: block;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer .footer_wrap .logo img {
+    width: 115px;
+    height: 100%;
+  }
 }
 
 footer .footer_wrap .networks img {
