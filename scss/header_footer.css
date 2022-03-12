@@ -404,6 +404,52 @@ footer {
   background: #545A2F;
   width: 100%;
   padding: 22px 0;
+  position: relative;
+}
+
+footer .up_arrow {
+  text-decoration: none;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  width: 124px;
+  height: 124px;
+  background-color: #99A18E;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: -196px;
+  right: 155px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  footer .up_arrow {
+    width: 95px;
+    height: 95px;
+    font-size: 14px;
+    line-height: 17px;
+    right: 5%;
+  }
+}
+
+footer .up_arrow img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 27px;
+  margin-bottom: 11px;
+}
+
+@media only screen and (max-width: 1300px) {
+  footer .up_arrow img {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    width: 15px;
+    height: 23px;
+  }
 }
 
 footer .footer_wrap {
