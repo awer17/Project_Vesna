@@ -41,7 +41,10 @@ body._lock{
     margin: 0 auto;
     @include onlylange(1900px){
         width: 95%;
-    }       
+    }
+    @include onlylange(640px) {
+        width: 88%;
+    }      
 }
 
 
@@ -374,6 +377,10 @@ footer{
     width: 100%;
     padding: 22px 0;
     position: relative;
+    @include onlylange(640px){
+        padding-top: 37px;
+        padding-bottom: 23px;
+    }
     .up_arrow{        
         text-decoration: none;
         font-family: 'Noah';
@@ -397,6 +404,9 @@ footer{
             font-size: 14px;
             line-height: 17px;
             right: 5%;
+        }
+        @include onlylange(640px){
+            top: 334px;
         }
         
         img{
@@ -422,22 +432,45 @@ footer{
             row-gap: 20px;
             grid-template-rows: calc(56px + 25px) 24px;
         }
+        @include onlylange(640px){
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
         .contact{
             align-self: flex-end;
+            @include onlylange(640px){
+                align-self: center;
+            }
             a{
                 display: block;
                 margin-top: 22px;
                 text-decoration: none;
                 font-family: 'Geometria';
                 font-weight: 400;
-                font-style: 20px;
+                font-size: 20px;
                 color: $white;
+                @include onlylange(640px){
+                    margin-top: 19px;
+                    font-size: 22px;
+                    text-align: center;
+                }
+            }
+            a.mail{
+                @include onlylange(640px){
+                    margin-top: 13px;
+                }
+                
             }
         }
         .logo{
             @include onlylange(1204px){
                 grid-row: 1/span 2 ;
                 grid-column: 2;
+            }
+            @include onlylange(640px){
+                order: -1;
             }
             img{
                 display: block;
@@ -453,20 +486,32 @@ footer{
                 display: block;
                 margin-top: 18px;
                 margin-left: auto;
+                @include onlylange(640px){
+                    margin-top: 14px;
+                }
             }
         }
-        .copy p{
-            font-family: 'Noah';
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            color: $white;
-            opacity: 0.7;
-            position: relative;
-            z-index: 0;
-        }
+        .copy{ 
+            @include onlylange(640px){
+            order: 1;
+            align-self: start;
+            margin-top: -13px;}            
+            p{
+                font-family: 'Noah';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: $white;
+                opacity: 0.7;
+                position: relative;
+                z-index: 0;
+             }
+         }
         .privacy{
             grid-column: 3;
+            @include onlylange(640px){
+                align-self: start;
+            margin-top: 34px;}
             a{
                 display: block;
                 font-family: 'Noah';
