@@ -86,7 +86,6 @@ header .wrap img {
     width: 110px;
     height: 56px;
     margin: 0;
-    margin-left: 7px;
   }
 }
 
@@ -119,6 +118,10 @@ header .wrap .item-left {
     width: 100%;
     height: 100%;
     background: #545A2F;
+    background-image: url(../images/svg/flower.svg);
+    background-repeat: no-repeat;
+    background-size: 181px 131px;
+    background-position: 125% 53%;
     z-index: 1;
     -webkit-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
