@@ -31,6 +31,13 @@ $font-6: 18px;
         @content;       
     }
 }
+@mixin textstyle-h4 {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 47px;
+}
 
 @mixin textstyle-h5 {
     font-family: 'Noah';
@@ -38,6 +45,14 @@ $font-6: 18px;
     font-weight: 400;
     font-size: 24px;
     line-height: 30px
+}
+
+@mixin textstyle-h6 {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 body._lock{
@@ -344,6 +359,17 @@ header .wrap .menu_icon._active{
         flex-direction: column;
         align-items: center;
         position: relative;
+        @include onlylange(768px){
+            width: 88%;
+        }
+        @include onlylange(710px){
+            padding: 7% 9%;
+        }
+        @include onlylange(420px){
+            width: 100%;
+            padding:  62px 5px  90px 5px;
+        }          
+
         img.firsi-img{
             position: absolute;
             top: 0;
@@ -382,7 +408,8 @@ header .wrap .menu_icon._active{
             }         
        
         }
-        h5{
+        h2{
+            position: relative;
             font-family: 'Noah';
             font-style: normal;
             font-weight: 400;
@@ -390,9 +417,13 @@ header .wrap .menu_icon._active{
             line-height: 72px;
             color: $green;  
             width: 340px;
-            text-align: center;          
+            text-align: center;
+            @include onlylange(768px){
+                @include textstyle-h4();
+            }          
         }
         p{
+            position: relative;
             margin-top: 19px;
             margin-bottom: 32px;
             font-family: 'Noah';
@@ -401,91 +432,150 @@ header .wrap .menu_icon._active{
             font-size: $font-5;
             line-height: 30px;
             color:  $black;
+            @include onlylange(768px){
+                @include textstyle-h6();
+                text-align: center;
+            }
+            @include onlylange(420px){
+                margin-top: 11px;
+                margin-bottom: 22px;
+                width: 215px;
+            }
         }
-        .full_name{
-            width: 100%;
-            height: 50px;
-            padding-left: 22px;
-            color: #333333;
-            font-family: 'Noah';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 30px;
-            position: relative;
-            border: 1px solid $pale_green;
-            box-sizing: border-box;
-            &::placeholder{
-                font-family: 'Noah';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 15px;
-                color: #63533E;
-                position: absolute;
-                top: 2px;
-                left: 22px
-            }            
-        }
-        .input_tel{
-            margin-top: 30px;
-            margin-bottom: 24px;
-            width: 100%;
-            height: 50px;
-            padding-left: 22px;
-            color: #333333;
-            font-family: 'Noah';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 30px;
-            border: 1px solid $pale_green;
-            box-sizing: border-box;
-            &::placeholder{
+        form{
+            display: flex;
+            flex-direction: column;
+            .full_name{
+                position: relative;
+                width: 100%;
+                height: 50px;
+                padding-left: 22px;
+                color: #333333;
                 font-family: 'Noah';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 30px;
-                color: #63533E;
-            }
-        }
-        div{
-            display: flex;
-            align-items: center;
-            .checkbox{
-                width: 20px;
-                height: 20px;
-                border-radius: 0%;
+                position: relative;
                 border: 1px solid $pale_green;
                 box-sizing: border-box;
-                align-items: center;               
+                @include onlylange(420px){
+                    width: 288px;
+                    margin: 0 auto;
+                }
+                &::placeholder{
+                    font-family: 'Noah';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #63533E;
+                    position: absolute;
+                    top: 2px;
+                    left: 22px;
+                }            
             }
-            label{
-                margin-left: 11px;
-                font-family: 'Geometria';
+            .input_tel{
+                position: relative;
+                margin-top: 30px;
+                margin-bottom: 24px;
+                width: 100%;
+                height: 50px;
+                padding-left: 22px;
+                color: #333333;
+                font-family: 'Noah';
                 font-style: normal;
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 214%;
-                color: #000000;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 30px;
+                border: 1px solid $pale_green;
+                box-sizing: border-box;
+                @include onlylange(420px){
+                    @include textstyle-h6;
+                    width: 288px;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    margin-bottom: 17px;
+                }
+                &::placeholder{
+                    font-family: 'Noah';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: #633e50;
+                    @include textstyle-h6;
+                }
+            }
+            div{
+                display: flex;
                 align-items: center;
+                position: relative;
+                @include onlylange(630px){
+                    width: 288px;
+                    margin: 0 auto;
+                }
+                .checkbox{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 0%;
+                    border: 1px solid $pale_green;
+                    box-sizing: border-box;
+                }
+                label{
+                    margin-left: 11px;
+                    font-family: 'Geometria';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 214%;
+                    color: #000000;
+                    @include onlylange(630px){
+                        line-height: 17px;
+                        font-weight: 400;
+                        width: 225px;
+                    }
+
+    
+                }
             }
+            button{
+                position: relative;
+                display: block;
+                padding: 15px 67px 15px 63px;
+                border: none;
+                background-color: $green;           
+                margin: 0 auto;
+                margin-top: 50px;
+                box-sizing: border-box;
+                transition: 0.8s;
+                @include onlylange(630px){
+                    width: 311px;
+                    margin-top: 24px;
+                }
+                &:hover{
+                    background: #99A18E;
+                }
+                .btn_col{
+                    @include textstyle-h5();
+                    color: $white;
+                    @include onlylange(630px){
+                        display: none;
+                    }
+                }
+                .btn{
+                    @include textstyle-h5();
+                    color: $white;
+                    display: none;
+                    @include onlylange(630px){
+                        display:inline;
+                    }
+                }
+
+
+    
+
         }
-        button{
-            display: block;
-            padding: 15px 67px 15px 63px;
-            border: none;
-            background-color: $green;           
-            @include textstyle-h5();
-            color: $white;
-            margin: 0 auto;
-            margin-top: 50px;
-            box-sizing: border-box;
-            transition: 0.8s;
-            &:hover{
-                background: #99A18E;
-            }
         }
     }
 }

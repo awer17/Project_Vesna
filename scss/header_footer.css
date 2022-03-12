@@ -391,6 +391,25 @@ header .wrap .menu_icon._active span {
   position: relative;
 }
 
+@media only screen and (max-width: 768px) {
+  .wrap_consultation .cart_consultation {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .wrap_consultation .cart_consultation {
+    padding: 7% 9%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .wrap_consultation .cart_consultation {
+    width: 100%;
+    padding: 62px 5px  90px 5px;
+  }
+}
+
 .wrap_consultation .cart_consultation img.firsi-img {
   position: absolute;
   top: 0;
@@ -435,7 +454,8 @@ header .wrap .menu_icon._active span {
           transform: rotate(-45deg) translate(1px, -50%);
 }
 
-.wrap_consultation .cart_consultation h5 {
+.wrap_consultation .cart_consultation h2 {
+  position: relative;
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -446,7 +466,18 @@ header .wrap .menu_icon._active span {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .wrap_consultation .cart_consultation h2 {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 47px;
+  }
+}
+
 .wrap_consultation .cart_consultation p {
+  position: relative;
   margin-top: 19px;
   margin-bottom: 32px;
   font-family: 'Noah';
@@ -457,7 +488,37 @@ header .wrap .menu_icon._active span {
   color: #1A1A18;
 }
 
-.wrap_consultation .cart_consultation .full_name {
+@media only screen and (max-width: 768px) {
+  .wrap_consultation .cart_consultation p {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .wrap_consultation .cart_consultation p {
+    margin-top: 11px;
+    margin-bottom: 22px;
+    width: 215px;
+  }
+}
+
+.wrap_consultation .cart_consultation form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrap_consultation .cart_consultation form .full_name {
+  position: relative;
   width: 100%;
   height: 50px;
   padding-left: 22px;
@@ -473,7 +534,14 @@ header .wrap .menu_icon._active span {
           box-sizing: border-box;
 }
 
-.wrap_consultation .cart_consultation .full_name::-webkit-input-placeholder {
+@media only screen and (max-width: 420px) {
+  .wrap_consultation .cart_consultation form .full_name {
+    width: 288px;
+    margin: 0 auto;
+  }
+}
+
+.wrap_consultation .cart_consultation form .full_name::-webkit-input-placeholder {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -485,7 +553,7 @@ header .wrap .menu_icon._active span {
   left: 22px;
 }
 
-.wrap_consultation .cart_consultation .full_name:-ms-input-placeholder {
+.wrap_consultation .cart_consultation form .full_name:-ms-input-placeholder {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -497,7 +565,7 @@ header .wrap .menu_icon._active span {
   left: 22px;
 }
 
-.wrap_consultation .cart_consultation .full_name::-ms-input-placeholder {
+.wrap_consultation .cart_consultation form .full_name::-ms-input-placeholder {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -509,7 +577,7 @@ header .wrap .menu_icon._active span {
   left: 22px;
 }
 
-.wrap_consultation .cart_consultation .full_name::placeholder {
+.wrap_consultation .cart_consultation form .full_name::placeholder {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -521,7 +589,8 @@ header .wrap .menu_icon._active span {
   left: 22px;
 }
 
-.wrap_consultation .cart_consultation .input_tel {
+.wrap_consultation .cart_consultation form .input_tel {
+  position: relative;
   margin-top: 30px;
   margin-bottom: 24px;
   width: 100%;
@@ -538,64 +607,103 @@ header .wrap .menu_icon._active span {
           box-sizing: border-box;
 }
 
-.wrap_consultation .cart_consultation .input_tel::-webkit-input-placeholder {
+@media only screen and (max-width: 420px) {
+  .wrap_consultation .cart_consultation form .input_tel {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    width: 288px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 17px;
+  }
+}
+
+.wrap_consultation .cart_consultation form .input_tel::-webkit-input-placeholder {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  color: #63533E;
+  color: #633e50;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
 }
 
-.wrap_consultation .cart_consultation .input_tel:-ms-input-placeholder {
+.wrap_consultation .cart_consultation form .input_tel:-ms-input-placeholder {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  color: #63533E;
+  color: #633e50;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
 }
 
-.wrap_consultation .cart_consultation .input_tel::-ms-input-placeholder {
+.wrap_consultation .cart_consultation form .input_tel::-ms-input-placeholder {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  color: #63533E;
+  color: #633e50;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
 }
 
-.wrap_consultation .cart_consultation .input_tel::placeholder {
+.wrap_consultation .cart_consultation form .input_tel::placeholder {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  color: #63533E;
+  color: #633e50;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
 }
 
-.wrap_consultation .cart_consultation div {
+.wrap_consultation .cart_consultation form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
-.wrap_consultation .cart_consultation div .checkbox {
+@media only screen and (max-width: 630px) {
+  .wrap_consultation .cart_consultation form div {
+    width: 288px;
+    margin: 0 auto;
+  }
+}
+
+.wrap_consultation .cart_consultation form div .checkbox {
   width: 20px;
   height: 20px;
   border-radius: 0%;
   border: 1px solid #99A18E;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.wrap_consultation .cart_consultation div label {
+.wrap_consultation .cart_consultation form div label {
   margin-left: 11px;
   font-family: 'Geometria';
   font-style: normal;
@@ -603,22 +711,22 @@ header .wrap .menu_icon._active span {
   font-size: 14px;
   line-height: 214%;
   color: #000000;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.wrap_consultation .cart_consultation button {
+@media only screen and (max-width: 630px) {
+  .wrap_consultation .cart_consultation form div label {
+    line-height: 17px;
+    font-weight: 400;
+    width: 225px;
+  }
+}
+
+.wrap_consultation .cart_consultation form button {
+  position: relative;
   display: block;
   padding: 15px 67px 15px 63px;
   border: none;
   background-color: #545A2F;
-  font-family: 'Noah';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
-  color: #fff;
   margin: 0 auto;
   margin-top: 50px;
   -webkit-box-sizing: border-box;
@@ -627,8 +735,46 @@ header .wrap .menu_icon._active span {
   transition: 0.8s;
 }
 
-.wrap_consultation .cart_consultation button:hover {
+@media only screen and (max-width: 630px) {
+  .wrap_consultation .cart_consultation form button {
+    width: 311px;
+    margin-top: 24px;
+  }
+}
+
+.wrap_consultation .cart_consultation form button:hover {
   background: #99A18E;
+}
+
+.wrap_consultation .cart_consultation form button .btn_col {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 630px) {
+  .wrap_consultation .cart_consultation form button .btn_col {
+    display: none;
+  }
+}
+
+.wrap_consultation .cart_consultation form button .btn {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  display: none;
+}
+
+@media only screen and (max-width: 630px) {
+  .wrap_consultation .cart_consultation form button .btn {
+    display: inline;
+  }
 }
 
 /*secton hero*/
