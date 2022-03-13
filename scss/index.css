@@ -409,7 +409,29 @@
   position: relative;
 }
 
+@media only screen and (max-width: 1440px) {
+  .info {
+    padding-top: 160px;
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .info {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .info {
+    padding-bottom: 0;
+    padding-top: 42px;
+  }
+}
+
 .info h3 {
+  position: relative;
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -418,11 +440,41 @@
   color: #1A1A18;
 }
 
+@media only screen and (max-width: 1440px) {
+  .info h3 {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 47px;
+    color: #1A1A18;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .info h3 {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1A1A18;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .info h3 {
+    width: 288px;
+    margin: 0 auto;
+  }
+}
+
 .info h3 span {
   font-weight: bold;
 }
 
 .info h5 {
+  position: relative;
   margin: 0 auto;
   margin-top: 53px;
   margin-bottom: 196px;
@@ -430,20 +482,66 @@
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 22px;
   color: #1A1A18;
 }
 
+@media only screen and (max-width: 1110px) {
+  .info h5 {
+    margin-bottom: 100px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .info h5 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .info h5 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .info h5 {
+    margin-top: 40px;
+    margin-bottom: 106px;
+  }
+}
+
 .info .conteinet_img {
+  position: relative;
   margin: 0 auto;
-  max-width: 1790px;
+  width: 1790px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 1860px) {
+  .info .conteinet_img {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .info .conteinet_img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
 }
 
 .info .conteinet_img img {
@@ -453,15 +551,117 @@
      object-fit: cover;
 }
 
+@media only screen and (max-width: 1860px) {
+  .info .conteinet_img img {
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .info .conteinet_img img {
+    height: 360px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .info .conteinet_img img {
+    height: 290px;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .info .conteinet_img img {
+    height: 240px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .info .conteinet_img img {
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .info .conteinet_img img {
+    width: 100%;
+    height: 227px;
+    margin-top: 10px;
+  }
+}
+
 .info img.left {
   position: absolute;
   left: 0;
-  bottom: 567px;
+  top: 404px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .info img.left {
+    width: 400px;
+    height: 316px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 360px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .info img.left {
+    width: 323px;
+    height: 242px;
+    top: 235px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .info img.left {
+    width: 160px;
+    height: 115px;
+    top: 280px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .info img.left {
+    top: 435px;
+  }
 }
 
 .info img.right {
   position: absolute;
   right: 0;
   top: 404px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .info img.right {
+    width: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 316px;
+    top: 360px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .info img.right {
+    width: 323px;
+    height: 242px;
+    top: 235px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .info img.right {
+    width: 160px;
+    height: 115px;
+    top: 280px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .info img.right {
+    top: 435px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

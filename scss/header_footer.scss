@@ -342,6 +342,7 @@ header .wrap .menu_icon._active{
 
 .wrap_consultation{
     position: fixed;
+    z-index: 12;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,11 +387,17 @@ header .wrap .menu_icon._active{
         }
         .cancel{
             position:   absolute;
-            width: 26px;
-            height: 26px;
+            width: 30px;
+            height: 30px;
             top: 16px;
             right: 16px;
+            background: $white;
             cursor: pointer;
+            transition: 0.8s;
+            &:hover{
+                width: 34px;
+                height: 35px;
+            }
             span{
                 cursor: pointer;
                 &::after{

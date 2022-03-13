@@ -318,39 +318,148 @@ $white: #fff;
     padding-bottom: 196px;
     text-align: center;
     position: relative;
+    @include onlylange(1440px){
+        padding-top: 160px;
+        padding-bottom: 100px;
+    }
+    @include onlylange(825px){
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+    @include onlylange(574px){
+        padding-bottom: 0;
+        padding-top: 42px;
+    }
     h3{
+        position: relative;
         @include textstyle-h3($black);
+        @include onlylange(1440px){
+            @include textstyle-h4($black)
+        }
+        @include onlylange(1110px){
+            @include textstyle-h5($black)
+        }
+        @include onlylange(420px){
+            width: 288px;
+            margin: 0 auto;
+        }
         span{
             font-weight: bold;
         }
+
     }
     h5{
+        position: relative;
         margin: 0 auto;
         margin-top: 53px;
         margin-bottom: 196px;
         width: 856px;
-
-        @include textstyle-h5($black);
+        @include textstyle-h6($black);
+        @include onlylange(1110px){
+            margin-bottom: 100px;
+            width: 90%;
+        }
+        @include onlylange(825px){
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+        @include onlylange(574px){
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        @include onlylange(420px){
+            margin-top: 40px;
+            margin-bottom: 106px;
+        }
+    
     }
     .conteinet_img{
+        position: relative;
         margin: 0 auto;
-        max-width: 1790px;
+        width: 1790px;
         display: flex;
         justify-content: space-between;
+        @include onlylange(1860px){
+            width: 95%;
+        }
+        @include onlylange(574px){
+            flex-direction: column;
+            width: 100%
+        }
         img{
             width: 579px;
             height: 410px;
             object-fit: cover;
+            @include onlylange(1860px){
+                width: 32%;
+            }
+            @include onlylange(1440px){
+                height: 360px;
+            }
+            @include onlylange(1440px){
+                height: 290px;
+            }
+            @include onlylange(825px){
+                height: 240px;
+            }
+            @include onlylange(767px){
+                height: 230px;
+            }
+            @include onlylange(574px){
+                width: 100%;
+                height: 227px;
+                margin-top: 10px;
+            }
         }
     }
     img.left{
         position: absolute;
         left: 0;
-        bottom: 567px;
+        top: 404px;
+        @include onlylange(1440px){
+            width: 400px;
+            height: 316px;
+            object-fit: cover;
+            top: 360px;
+        }
+        @include onlylange(1100px){
+            width: 323px;
+            height: 242px;
+            top: 235px;
+        }
+        @include onlylange(768px){
+            width: 160px;
+            height: 115px;
+            top: 280px;
+        }
+        @include onlylange(420px){
+            top: 435px;
+        }
     }
     img.right{
         position: absolute;
         right: 0;
         top: 404px;
+        @include onlylange(1440px){
+            width: 400px;
+            object-fit: cover;
+            height: 316px;
+            top: 360px;
+        }
+        @include onlylange(1100px){
+            width: 323px;
+            height: 242px;
+            top: 235px;
+        }
+        @include onlylange(768px){
+            width: 160px;
+            height: 115px;
+            top: 280px;
+        }
+        @include onlylange(420px){
+            top: 435px;
+        }
+
     }
 }

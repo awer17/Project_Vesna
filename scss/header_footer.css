@@ -354,6 +354,7 @@ header .wrap .menu_icon._active span {
 /*consultation*/
 .wrap_consultation {
   position: fixed;
+  z-index: 12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,11 +427,19 @@ header .wrap .menu_icon._active span {
 
 .wrap_consultation .cart_consultation .cancel {
   position: absolute;
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   top: 16px;
   right: 16px;
+  background: #fff;
   cursor: pointer;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.wrap_consultation .cart_consultation .cancel:hover {
+  width: 34px;
+  height: 35px;
 }
 
 .wrap_consultation .cart_consultation .cancel span {
