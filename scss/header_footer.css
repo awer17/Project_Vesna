@@ -362,13 +362,14 @@ header .wrap .menu_icon._active span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 0;
+  top: -100%;
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5.85%, rgba(0, 0, 0, 0.5)), color-stop(61.53%, rgba(134, 134, 134, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(.jpg);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
   z-index: 5;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  display: flex;
 }
 
 .wrap_consultation .cart_consultation {
@@ -775,6 +776,10 @@ header .wrap .menu_icon._active span {
   .wrap_consultation .cart_consultation form button .btn {
     display: inline;
   }
+}
+
+._active-cart {
+  top: 0;
 }
 
 /*secton hero*/
