@@ -8,6 +8,13 @@ $white: #fff;
 
 /*@mixin*/
 
+@mixin onlylange($w) {
+    @media only screen and (max-width: $w)
+    {
+        @content;       
+    }
+}
+
 
 @mixin textstyle-h1($c) {
     font-family: 'Noah';
@@ -17,6 +24,16 @@ $white: #fff;
     line-height: 87px;
     color: $c;
 }
+
+@mixin textstyle-h2($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 72px;
+    color: $c;
+}
+
 @mixin textstyle-h3($c) {
     font-family: 'Noah';
     font-style: normal;
@@ -63,43 +80,137 @@ $white: #fff;
     margin-top: -179px;
     background-image: url(../images/img/bg-headar.jpg);
     background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 50%;
+    @include onlylange(520px){
+        margin-top: -172px;
+        background-size: auto 105%;
+        background-position: 50% -29%;             
+    }
     .bg{        
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
         background-size: auto;
         position: relative;
-        padding-bottom: 377px;
         .content-hero{
             padding-top: 282px;
             position: relative;
             width: 959px;
             padding-left: 292px;
             box-sizing: content-box;
+            @include onlylange(1900px){
+                padding-left: 16%;
+            }
+            @include onlylange(1440px){
+                padding-left: 9%;
+            }
+            @include onlylange(1100px){
+                width: 61%;
+            }
+            @include onlylange(768px){
+                width: 80%;
+            }
+            @include onlylange(520px){
+                padding-top: 251px;
+                padding-left: 16px;
+            }
             p{
                 @include textstyle-h5($white);
+                @include onlylange(1100px){
+                    @include textstyle-h6($white);
+                }
+                @include onlylange(520px){
+                    font-family: 'Noah';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
             }
             h1{
                 @include textstyle-h1($white);
                 margin-top: 12px;
                 margin-bottom: 12px;
+                @include onlylange(1440px){
+                    @include textstyle-h2($white);
+                }
+                @include onlylange(1100px){
+                    @include textstyle-h3($white);
+                }
+                @include onlylange(520px){
+                    font-family: 'Noah';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-top: 11px;
+                    margin-bottom: 17px;
+                }
             }
             h3{
                 @include textstyle-h3($white);
+                @include onlylange(1440px){
+                    @include textstyle-h4($white);
+                }
+                @include onlylange(1100px){
+                    @include textstyle-h5($white);
+                }
+                @include onlylange(520px){
+                    @include textstyle-h6($white);
+                }
+               
             }
         }
         .content-img{
             position: absolute;
             right: 0;
             top: 292px;
+            @include onlylange(1440px){
+                top: 330px;
+                width: 353px;
+                height: 293px;
+                object-fit: cover;
+            }
+            @include onlylange(968px){
+                width: 297px;
+                height: 209px;
+                object-fit: cover;
+                top: 370px;
+            }
+            @include onlylange(520px){
+                height: 131px;
+                width: 181px;
+                top: 390px;
+            }
         }
         .slider_wrap{
-            position: absolute;
+            margin-top: 234px;
             bottom: 0;
-            left: 292px;
+            margin-left: 292px;
             width: 1338px;
             display: grid;
             grid-template-columns: 1fr 215px 139px;
             column-gap: 229px;
             align-items: center;
+            @include onlylange(1920px){
+                margin: 0 auto;
+                margin-top: 234px;
+                width: 72%;
+                column-gap: 16%;           
+            }
+            @include onlylange(1440px){
+                margin-left: 7%;
+                margin-top: 170px;
+                column-gap: 7%;
+            }
+            @include onlylange(1100px){
+                grid-template-columns: 1fr 215px;
+            }
+            @include onlylange(968px){
+                grid-template-columns: 1fr;
+            }
+            @include onlylange(520px){
+                margin-left: 0;
+            }
             ._item{
                 width: 430px;
                 padding: 30px 26px;
@@ -107,6 +218,12 @@ $white: #fff;
                 align-items: center;
                 background: rgba(99, 83, 62, 0.52);
                 // backdrop-filter: blur(4px);
+                @include onlylange(520px){
+                    width: 184px;
+                    height: 80px;
+                    box-sizing: border-box;
+                    padding: 20px 6px 20px 14px;
+                }
                 p{
                     font-family: 'Noah';
                     font-style: normal;
@@ -116,18 +233,38 @@ $white: #fff;
                     color: $white;
                     width: 152px;
                     margin-right: 21px;
+                    @include onlylange(520px){
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 20px;
+                        width: 91px;
+                    }
+                }
+                a img{
+                    @include onlylange(520px){
+                        width: 14px;
+                        height: 6px;
+                    }
                 }
                 .project-img{
                     width: 109px;
                     height: 86px;
                     object-fit: cover;
                     margin-left: 64px;
+                    @include onlylange(520px){
+                        width: 47px;
+                        height: 46px;
+                        margin-left: 10px;
+                    }
                 }
             }
             .btn_slide{
                 display: flex;
                 justify-content: space-between;
                 padding-top: 15px;
+                @include onlylange(968px){
+                    display: none;
+                }
                 .aroow-left{
                     width: 33px;
                     height: 15px;
@@ -144,8 +281,12 @@ $white: #fff;
             }
             .slide-indicator{
                 display: grid;
+                padding-top: 15px;
                 grid-template-columns: 1fr 30px 30px 30px 26px;
                 align-items: center;
+                @include onlylange(1100px){
+                    display: none;
+                }
                 span{
                     font-family: 'Geometria';
                     font-style: normal;
