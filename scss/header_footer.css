@@ -37,10 +37,11 @@ body._lock {
 .wrapper {
   margin: 0 auto;
   max-width: 1920px;
-  background: #1A1A18;
 }
 
 header {
+  position: relative;
+  z-index: 20;
   margin-top: 28px;
 }
 
@@ -429,6 +430,7 @@ header .wrap .menu_icon._active span {
   height: 26px;
   top: 16px;
   right: 16px;
+  cursor: pointer;
 }
 
 .wrap_consultation .cart_consultation .cancel::after {
@@ -780,64 +782,6 @@ header .wrap .menu_icon._active span {
 
 ._active-cart {
   top: 0;
-}
-
-/*secton hero*/
-.hero {
-  background-image: url(../images/img/bg-headar.jpg);
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  margin-top: -179px;
-}
-
-.hero .bg-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5.85%, rgba(0, 0, 0, 0.5)), color-stop(61.53%, rgba(134, 134, 134, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(.jpg);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
-  padding-top: 282px;
-  background-repeat: no-repeat;
-}
-
-.hero .bg-gradient .content-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: calc(1920px - 292px);
-  margin-left: auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.hero .bg-gradient .content-hero .content-left {
-  width: 959px;
-}
-
-.hero .bg-gradient .content-hero .content-left .subtitle__hero {
-  font-family: 'Noah';
-  font-style: normal;
-  font-weight: normal;
-  font-size: var(--font-5);
-  line-height: 30px;
-  color: var(--colo-white);
-}
-
-.hero .bg-gradient .content-hero .content-left h1 {
-  font-family: 'Noah';
-  font-style: normal;
-  font-weight: bold;
-  font-size: var(--font-1);
-  line-height: 87px;
-  color: var(--colo-white);
-  margin: 12px 0;
-}
-
-.hero .bg-gradient .content-hero .content-left h3 {
-  font-family: 'Noah';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: var(--font-3);
-  color: var(--colo-white);
 }
 
 /*footer*/

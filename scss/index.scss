@@ -1,0 +1,167 @@
+$green: #545A2F;
+$pale_green: #99A18E;
+$brown: #63533E;
+$black: #1A1A18;
+$white: #fff;
+
+
+
+/*@mixin*/
+
+
+@mixin textstyle-h1($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 87px;
+    color: $c;
+}
+@mixin textstyle-h3($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: $c;
+}
+
+@mixin textstyle-h4($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 47px;
+    color: $c;
+}
+
+@mixin textstyle-h5($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: $c;
+}
+
+@mixin textstyle-h6($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $c;
+}
+
+
+
+/*hero*/
+
+
+
+.hero{
+    margin-top: -179px;
+    background-image: url(../images/img/bg-headar.jpg);
+    background-repeat: no-repeat;
+    .bg{        
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
+        background-size: auto;
+        position: relative;
+        padding-bottom: 377px;
+        .content-hero{
+            padding-top: 282px;
+            position: relative;
+            width: 959px;
+            padding-left: 292px;
+            box-sizing: content-box;
+            p{
+                @include textstyle-h5($white);
+            }
+            h1{
+                @include textstyle-h1($white);
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+            h3{
+                @include textstyle-h3($white);
+            }
+        }
+        .content-img{
+            position: absolute;
+            right: 0;
+            top: 292px;
+        }
+        .slider_wrap{
+            position: absolute;
+            bottom: 0;
+            left: 292px;
+            width: 1338px;
+            display: grid;
+            grid-template-columns: 1fr 215px 139px;
+            column-gap: 229px;
+            align-items: center;
+            ._item{
+                width: 430px;
+                padding: 30px 26px;
+                display: flex;
+                align-items: center;
+                background: rgba(99, 83, 62, 0.52);
+                // backdrop-filter: blur(4px);
+                p{
+                    font-family: 'Noah';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 37px;
+                    color: $white;
+                    width: 152px;
+                    margin-right: 21px;
+                }
+                .project-img{
+                    width: 109px;
+                    height: 86px;
+                    object-fit: cover;
+                    margin-left: 64px;
+                }
+            }
+            .btn_slide{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 15px;
+                .aroow-left{
+                    width: 33px;
+                    height: 15px;
+                    background-image: url(../images/svg/arrow.svg);
+                    background-repeat: no-repeat;
+                    transform: rotate(180deg);
+                }
+                .btn-right{
+                    width: 33px;
+                    height: 15px;
+                    background-image: url(../images/svg/arrow.svg);
+                    background-repeat: no-repeat;
+                }
+            }
+            .slide-indicator{
+                display: grid;
+                grid-template-columns: 1fr 30px 30px 30px 26px;
+                align-items: center;
+                span{
+                    font-family: 'Geometria';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 21px;
+                    color: $white;
+                }
+                span:nth-child(5){
+                    text-align: right;
+                }
+                button{
+                    border: none;
+                    background: rgba(255, 255, 255, 0.28);
+                }
+            }
+        }
+    }
+}

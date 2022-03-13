@@ -44,7 +44,7 @@ $font-6: 18px;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 30px
+    line-height: 30px;
 }
 
 @mixin textstyle-h6 {
@@ -79,10 +79,12 @@ body._lock{
 .wrapper{
     margin: 0 auto;
     max-width: 1920px;
-    background: #1A1A18;
+    // background: #1A1A18;
 }
 
 header{   
+    position: relative;
+    z-index: 20;
     margin-top: 28px;
     @include onlylange(768px){
         margin-top: 16px;
@@ -388,6 +390,7 @@ header .wrap .menu_icon._active{
             height: 26px;
             top: 16px;
             right: 16px;
+            cursor: pointer;
             &::after{
                 content: "";
                 background-color: $brown;
@@ -585,62 +588,6 @@ header .wrap .menu_icon._active{
     
 
 
-/*secton hero*/
-
-
-
-.hero{
-    background-image: url(../images/img/bg-headar.jpg);
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    margin-top: -179px;
-
-}
-
-.hero .bg-gradient{    
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
-    padding-top: 282px;
-    background-repeat: no-repeat;
-}
-
-.hero .bg-gradient .content-hero{
-    display: flex;
-    width: calc(1920px - 292px);
-    margin-left: auto;
-    justify-content: space-between;    
-}
-
-.hero .bg-gradient .content-hero .content-left{
-    width: 959px;
-}
-
-.hero .bg-gradient .content-hero .content-left .subtitle__hero{
-    font-family: 'Noah';
-    font-style: normal;
-    font-weight: normal;
-    font-size: var(--font-5);
-    line-height: 30px;
-    color: var(--colo-white);
-}
-
-.hero .bg-gradient .content-hero .content-left h1{
-    font-family: 'Noah';
-    font-style: normal;
-    font-weight: bold;
-    font-size: var(--font-1);
-    line-height: 87px;
-    color: var(--colo-white);
-    margin: 12px 0;
-}
-
-.hero .bg-gradient .content-hero .content-left h3{
-    font-family: 'Noah';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: var(--font-3);
-    color: var(--colo-white);
-}
 
 
 

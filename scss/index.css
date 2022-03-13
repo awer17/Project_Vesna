@@ -1,0 +1,161 @@
+/*@mixin*/
+/*hero*/
+.hero {
+  margin-top: -179px;
+  background-image: url(../images/img/bg-headar.jpg);
+  background-repeat: no-repeat;
+}
+
+.hero .bg {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5.85%, rgba(0, 0, 0, 0.5)), color-stop(61.53%, rgba(134, 134, 134, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
+  background-size: auto;
+  position: relative;
+  padding-bottom: 377px;
+}
+
+.hero .bg .content-hero {
+  padding-top: 282px;
+  position: relative;
+  width: 959px;
+  padding-left: 292px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.hero .bg .content-hero p {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.hero .bg .content-hero h1 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 87px;
+  color: #fff;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.hero .bg .content-hero h3 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.hero .bg .content-img {
+  position: absolute;
+  right: 0;
+  top: 292px;
+}
+
+.hero .bg .slider_wrap {
+  position: absolute;
+  bottom: 0;
+  left: 292px;
+  width: 1338px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 215px 139px;
+      grid-template-columns: 1fr 215px 139px;
+  -webkit-column-gap: 229px;
+          column-gap: 229px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .bg .slider_wrap ._item {
+  width: 430px;
+  padding: 30px 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(99, 83, 62, 0.52);
+}
+
+.hero .bg .slider_wrap ._item p {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 37px;
+  color: #fff;
+  width: 152px;
+  margin-right: 21px;
+}
+
+.hero .bg .slider_wrap ._item .project-img {
+  width: 109px;
+  height: 86px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 64px;
+}
+
+.hero .bg .slider_wrap .btn_slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 15px;
+}
+
+.hero .bg .slider_wrap .btn_slide .aroow-left {
+  width: 33px;
+  height: 15px;
+  background-image: url(../images/svg/arrow.svg);
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.hero .bg .slider_wrap .btn_slide .btn-right {
+  width: 33px;
+  height: 15px;
+  background-image: url(../images/svg/arrow.svg);
+  background-repeat: no-repeat;
+}
+
+.hero .bg .slider_wrap .slide-indicator {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 30px 30px 26px;
+      grid-template-columns: 1fr 30px 30px 30px 26px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .bg .slider_wrap .slide-indicator span {
+  font-family: 'Geometria';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.hero .bg .slider_wrap .slide-indicator span:nth-child(5) {
+  text-align: right;
+}
+
+.hero .bg .slider_wrap .slide-indicator button {
+  border: none;
+  background: rgba(255, 255, 255, 0.28);
+}
+/*# sourceMappingURL=index.css.map */
