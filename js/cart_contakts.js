@@ -1,5 +1,5 @@
 
-const cartContacts = document.querySelector('.wrap_consultation');
+const cartContacts = document.querySelector('.con_on');
 
 if(cartContacts){
     const contact = document.querySelector('.consultation ');
@@ -10,7 +10,7 @@ if(cartContacts){
 }
 
 if (cartContacts) {
-    const constend = document.querySelector('.clic-cns', );
+    const constend = document.querySelector('.con_end_tou', );
     constend.addEventListener("click", function(a){
         cartContacts.classList.toggle('_active-cart');
         document.body.classList.toggle('_lock');
@@ -19,11 +19,10 @@ if (cartContacts) {
 }
 
 if (cartContacts) {
-    const constendtwo = document.querySelector('.cancel');
+    const constendtwo = document.querySelector('.con_end');
     constendtwo.addEventListener("click", function(a){
         cartContacts.classList.toggle('_active-cart');
         document.body.classList.toggle('_lock');
     })
-        
 }
 

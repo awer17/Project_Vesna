@@ -46,11 +46,11 @@
             </div>
         </header>
 
-        <div class="wrap_consultation ">
+        <div class="wrap_consultation con_on">
             <div class="cart_consultation">
                 <img class="firsi-img" src="images/svg/flower-2.svg" alt="flower">
                 <img class="second-img" src="images/svg/flower-3.svg" alt="flower">
-                <div class="cancel" ><span  ></span></div>
+                <div class="cancel con_end" ><span  ></span></div>
                 <h2 class="title">Закажите 
                     консультацию
                 </h2>
@@ -63,7 +63,31 @@
                         <input class="checkbox" type="checkbox" id="processing" name="processing">
                         <label for="processing">Я даю согласие на обработку своих персональных данных</label>
                     </div>
-                    <button form="consultation" class="clic-cns" ><span class="btn_col">Перезвоните мне</span> <span class="btn">Отправить</span></button>
+                    <button form="consultation" class="clic-cns con_end_tou" ><span class="btn_col">Перезвоните мне</span> <span class="btn">Отправить</span></button>
+                </form>                    
+
+            </div>
+
+        </div>
+
+        <div class=" wrap_consultation col">
+            <div class="cart_consultation">
+                <img class="firsi-img" src="images/svg/flower-2.svg" alt="flower">
+                <img class="second-img" src="images/svg/flower-3.svg" alt="flower">
+                <div class="cancel col_end" ><span  ></span></div>
+                <h2 class="title">Обратный 
+                    звонок
+                </h2>
+                <p >Менеджер перезвонит Вам в ближайшее время</p>
+                <form action="#" id="consultation">
+                    <input class="full_name" type="text"          
+                    placeholder="Имя">
+                    <input class="input_tel" type="tel" placeholder="+7(___) ___ __ __">
+                    <div>
+                        <input class="checkbox" type="checkbox" id="processing" name="processing">
+                        <label for="processing">Я даю согласие на обработку своих персональных данных</label>
+                    </div>
+                    <button form="consultation" class="clic-cns col_end_two" ><span class="btn_col">Перезвоните мне</span> <span class="btn">Отправить</span></button>
                 </form>                    
 
             </div>
@@ -98,7 +122,7 @@
         <footer>
             <div class="center">
                 
-                    <a class="up_arrow   " href="#">
+                    <a class="up_arrow" href="#">
                         <img src="images/svg/up_arrow.svg" alt="arrow" class="arrow">
                        Наверх
                     </a>
@@ -124,7 +148,9 @@
             </div>            
         </footer>
     </div>
-    <script src="js/cart_contakts.js"></script>
+    
+?    <script src="js/cart_contakts.js"></script>
     <script src="js/burger_menu.js"></script>
+    <script src="js/col.js"></script>
 </body>
 </html>
