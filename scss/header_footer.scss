@@ -212,7 +212,7 @@ header .wrap .connection{
 }
 
 
-header .wrap button.tel{
+header .wrap a.tel{
     display: block;
     padding: 15px 28px;
     border: none;
@@ -237,7 +237,7 @@ header .wrap button.tel{
     
 }
 
-header .wrap button.tel:hover{
+header .wrap a.tel:hover{
     background-color: var(--color-green);
     color: var(--colo-white);
 }

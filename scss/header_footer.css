@@ -212,7 +212,7 @@ header .wrap .item-left .menu li a:hover {
   }
 }
 
-header .wrap button.tel {
+header .wrap a.tel {
   display: block;
   padding: 15px 28px;
   border: none;
@@ -228,7 +228,7 @@ header .wrap button.tel {
 }
 
 @media only screen and (max-width: 1100px) {
-  header .wrap button.tel {
+  header .wrap a.tel {
     font-size: 16px;
     line-height: 24px;
     padding: 5px 10px;
@@ -236,14 +236,14 @@ header .wrap button.tel {
 }
 
 @media only screen and (max-width: 768px) {
-  header .wrap button.tel {
+  header .wrap a.tel {
     font-size: var(--font-5);
     padding: 15px 28px;
     line-height: 30px;
   }
 }
 
-header .wrap button.tel:hover {
+header .wrap a.tel:hover {
   background-color: var(--color-green);
   color: var(--colo-white);
 }
