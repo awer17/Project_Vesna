@@ -41,7 +41,7 @@ body._lock {
 
 header {
   position: relative;
-  z-index: 20;
+  z-index: 1;
   margin-top: 28px;
 }
 
@@ -293,7 +293,7 @@ header .wrap .menu_icon {
     width: 24px;
     height: 18px;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     cursor: pointer;
     top: 41px;
     right: 16px;
@@ -355,7 +355,7 @@ header .wrap .menu_icon._active span {
 /*consultation*/
 .wrap_consultation {
   position: fixed;
-  z-index: 12;
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -19,10 +19,10 @@ if (cartContacts) {
 }
 
 if (cartContacts) {
-    const constendtwo = document.querySelector('.con_end');
+    const constendtwo = document.querySelector('.con_end span');
     constendtwo.addEventListener("click", function(a){
         cartContacts.classList.toggle('_active-cart');
-        document.body.classList.toggle('_lock');
+         document.body.classList.toggle('_lock');
     })
 }
 
