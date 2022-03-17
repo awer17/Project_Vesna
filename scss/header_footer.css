@@ -140,6 +140,7 @@ header .wrap .item-left .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 38px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

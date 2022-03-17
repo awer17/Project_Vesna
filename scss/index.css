@@ -404,7 +404,7 @@
 /*section info*/
 .info {
   padding-top: 211px;
-  padding-bottom: 196px;
+  padding-bottom: 187px;
   text-align: center;
   position: relative;
 }
@@ -477,7 +477,7 @@
   position: relative;
   margin: 0 auto;
   margin-top: 53px;
-  margin-bottom: 196px;
+  margin-bottom: 287px;
   width: 856px;
   font-family: 'Noah';
   font-style: normal;
@@ -663,5 +663,192 @@
   .info img.right {
     top: 435px;
   }
+}
+
+/*excellence*/
+.excellence {
+  background-image: url(../images/svg/excellence.svg);
+  background-repeat: no-repeat;
+  background-position: 50%  50%;
+  position: relative;
+}
+
+.excellence .wrap_title h3 {
+  max-width: 1160px;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: #1A1A18;
+  padding-bottom: 199px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.excellence .wrap_title h3 span {
+  font-weight: bold;
+}
+
+.excellence .wrap_title .items_excellence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: calc( 50% - 61px);
+}
+
+.excellence .wrap_title .items_excellence .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.excellence .wrap_title .items_excellence .title img {
+  width: 50px;
+  height: 50px;
+}
+
+.excellence .wrap_title .items_excellence .title p {
+  width: calc(582px - 137px);
+  margin-left: 35px;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+}
+
+.excellence .wrap_title .items_excellence .title:nth-child(2) {
+  margin-left: 49px;
+  margin-top: 158px;
+  margin-bottom: 193px;
+}
+
+.excellence .wrap_title .items_excellence .title:nth-child(2) p {
+  width: 582px;
+}
+
+.excellence .wrap_title .items_excellence .title:nth-child(3) {
+  width: 582px;
+  margin-left: 84px;
+  margin-bottom: 185px;
+}
+
+.excellence .wrap_title .items_excellence .title:nth-child(3) p {
+  width: 582px;
+}
+
+.excellence .item_img {
+  width: 776px;
+  position: absolute;
+  bottom: 0;
+  left: -7px;
+}
+
+.excellence .item_img p {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+  margin-bottom: 14px;
+  margin-left: 170px;
+}
+
+.excellence .item_img img:nth-child(2) {
+  width: 701px;
+  height: 526px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.excellence .item_img img:nth-child(3) {
+  width: 536px;
+  height: 402px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-top: -53px;
+}
+
+/*servis list*/
+.servis h2 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+  color: #1A1A18;
+  margin-top: 252px;
+  margin-bottom: 64px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.servis .war_servis {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 399px 399px 399px;
+      grid-template-columns: 399px 399px 399px;
+  -webkit-column-gap: 70px;
+          column-gap: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servis .war_servis h4 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 47px;
+  color: #1A1A18;
+  margin-top: 11px;
+  margin-bottom: 56px;
+}
+
+.servis .war_servis ul {
+  list-style-type: disc;
+}
+
+.servis .war_servis ul li {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+  margin-bottom: 40px;
+}
+
+.servis .war_servis ul li:last-child {
+  margin-bottom: 0;
+}
+
+.servis a {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  padding: 15px 77px 15px 73px;
+  background: #545A2F;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  width: 311px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 80px;
 }
 /*# sourceMappingURL=index.css.map */

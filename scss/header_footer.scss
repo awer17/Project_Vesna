@@ -154,6 +154,7 @@ header .wrap .item-left._active{
 
 header .wrap .item-left .menu{
     display: flex;
+    margin-right: 38px;
     justify-content: space-between;
     @include onlylange(768px){        
         flex-direction: column; 
