@@ -38,4 +38,132 @@
   color: #fff;
   text-align: center;
 }
+
+/* Project */
+.project01 {
+  width: 1336px;
+  margin: 0 auto;
+}
+
+.project01 h2 {
+  margin-top: 130px;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+  color: #1A1A18;
+}
+
+.project01 .title {
+  margin-top: 25px;
+  margin-bottom: 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 106px 118px 244px;
+      grid-template-columns: 106px 118px 244px;
+  -webkit-column-gap: 67px;
+          column-gap: 67px;
+  -ms-grid-rows: 22px 30px;
+      grid-template-rows: 22px 30px;
+  row-gap: 8px;
+}
+
+.project01 .title p {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1A1A18;
+}
+
+.project01 .title p:nth-child(2) {
+  margin-left: 32px;
+}
+
+.project01 .title h5 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+}
+
+.project01 .title h5:nth-child(5) {
+  margin-left: 32px;
+}
+
+.project01 .title-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 430px 430px 430px;
+      grid-template-columns: 430px 430px 430px;
+  -webkit-column-gap: 23px;
+          column-gap: 23px;
+  -ms-grid-rows: 387px 387px;
+      grid-template-rows: 387px 387px;
+  row-gap: 23px;
+}
+
+.project01 .title-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project01 .title-img img:nth-child(2) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/span 3;
+  width: 883px;
+}
+
+.project01 .title-img .subtitle {
+  background: rgba(233, 236, 224, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.project01 .title-img .subtitle p {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+  font-style: italic;
+  width: 297px;
+  text-align: center;
+  margin: auto;
+  margin-top: 121px;
+}
+
+.project01 a {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  width: 311px;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  background: #545A2F;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 41px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.project01 a:hover {
+  background: #99A18E;
+}
 /*# sourceMappingURL=partfolio.css.map */
