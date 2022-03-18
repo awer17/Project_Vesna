@@ -23,6 +23,22 @@ $white: #fff;
     font-size: 70px;
     line-height: 87px;
     color: $c;
+    @include onlylange(1440px){
+        font-size: 58px;
+        line-height: 72px;
+    }
+    @include onlylange(1100px){
+        font-size: 48px;
+        line-height: 60px;
+    }
+    @include onlylange(768px){
+        font-size: 38px;
+        line-height: 47px;
+    }
+    @include onlylange(520px){
+        font-size: 24px;
+        line-height: 30px;
+        }
 }
 
 @mixin textstyle-h2($c) {
@@ -32,6 +48,18 @@ $white: #fff;
     font-size: 58px;
     line-height: 72px;
     color: $c;
+    @include onlylange(1440px){
+        font-size: 48px;
+        line-height: 60px;
+    }
+    @include onlylange(1100px){
+        font-size: 38px;
+        line-height: 47px;
+    }
+    @include onlylange(768px){
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
 
 @mixin textstyle-h3($c) {
@@ -41,6 +69,14 @@ $white: #fff;
     font-size: 48px;
     line-height: 60px;
     color: $c;
+    @include onlylange(1440px){
+        font-size: 38px;
+        line-height: 47px;
+    }
+    @include onlylange(1100px){
+        font-size: 24x;
+        line-height: 30px;
+    }
 }
 
 @mixin textstyle-h4($c) {
@@ -50,6 +86,18 @@ $white: #fff;
     font-size: 38px;
     line-height: 47px;
     color: $c;
+    @include onlylange(1440px){
+        font-size: 24px;
+        line-height: 30px;
+    }
+    @include onlylange(1100px){
+        font-size: 18x;
+        line-height: 22px;
+    }
+    @include onlylange(768px){
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 @mixin textstyle-h5($c) {
@@ -67,6 +115,14 @@ $white: #fff;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    color: $c;
+}
+@mixin textstyle-h7($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     color: $c;
 }
 
@@ -90,7 +146,7 @@ $white: #fff;
         padding-bottom: 100px;
         h1{
             @include textstyle-h1($white);
-            text-align: center;
+            text-align: center;            
         }
         h4{margin-top: 15px;
             @include textstyle-h4($white);
@@ -109,9 +165,22 @@ $white: #fff;
 .project01{
     width: 1336px;
     margin: 0 auto;
+    @include onlylange(1440px){
+        width: 90%;
+    }
+    @include onlylange(640px){
+        width: 100%;
+    }
     h2{
         margin-top: 130px;
         @include textstyle-h2($black);
+            @include onlylange(1024px){
+            margin-top: 70px;
+        }
+        @include onlylange(640px){
+            margin-left: 16px;
+            margin-top: 58px;
+        }
     }
     .title{
         margin-top: 25px;
@@ -119,27 +188,56 @@ $white: #fff;
         display: grid;
         grid-template-columns: 106px 118px 244px;
         column-gap: 67px;
-        grid-template-rows: 22px 30px;
-        row-gap: 8px;
-        p{
-            @include textstyle-h6($black)
+        @include onlylange(768px){
+            column-gap: 50px;
         }
-        p:nth-child(2){
+            @include onlylange(640px){
+            margin-left: 16px;
+            grid-template-columns: 183px 65px;
+            column-gap: 18px;
+            row-gap: 29px;
+        }
+
+        p{
+            @include textstyle-h6($black);
+            margin-bottom: 8px;
+        }
+        .area{
             margin-left: 32px;
+            @include onlylange(640px){
+                margin-left: 0;
+            }
         }
         h5{
-            @include textstyle-h5($black)
-        }
-        h5:nth-child(5){
-            margin-left: 32px;
+            @include textstyle-h5($black);
+            @include onlylange(640px){
+                @include textstyle-h6($black);
+            }
         }
     }
     .title-img{
         display: grid;
-        grid-template-columns: 430px 430px 430px;
+        grid-template-columns: 1fr 1fr 1fr;
         column-gap: 23px;
         grid-template-rows: 387px 387px;
         row-gap: 23px;
+        @include onlylange(1400px){
+            grid-template-rows: 320px 320px;
+        }
+        @include onlylange(1300px){
+            grid-template-rows: 270px 270px;
+        }
+        @include onlylange(1024px){
+            column-gap: 15px;
+            row-gap: 15px;
+            @include onlylange(640px){
+                display: none;
+            }
+
+        }
+        
+
+
         img{
             width: 100%;
             height: 100%;
@@ -147,24 +245,48 @@ $white: #fff;
         }
         img:nth-child(2){
             grid-column: 2/span 3;
-            width: 883px;
+            width: 100%;
+        }
+        img:nth-child(3){
+            @include onlylange(768px){
+                grid-column: 3;
+                width: calc(100% + 15px);
+            }
+        }
+        img:nth-child(5){
+            width: calc(100% + 23px);
+            @include onlylange(1024px){
+                width: calc(100% + 15px);
+            }
+            @include onlylange(768px){
+                grid-row: 2;
+                grid-column: 1/span 2;
+                width: 100%;
+            }
         }
         .subtitle{
             background: rgba(233, 236, 224, 0.7);
             width: 100%;
             height: 100%;
+            display: flex;
+            align-items: center;
+            @include onlylange(768px){
+                display: none;
+            }
             p{
                 @include textstyle-h5($black);
                 font-style: italic;
                 width: 297px;
                 text-align: center;
                 margin: auto;
-                margin-top: 121px;
-                
+                @include onlylange(1100px){
+                    @include textstyle-h6($black);
+                    width: 80%;
+                }
             }    
         }
     }
-    a{
+    a.btn{
         display: block;
         box-sizing: border-box;
         text-decoration: none;
@@ -180,7 +302,50 @@ $white: #fff;
         &:hover{
             background: $pale_green;
         }
-
+    }
+    .slider-project{
+        display: none;
+        @include onlylange(640px){
+            display: block;
+            width: 100%;
+            height: 270px;
+        }
+        .swiper-slide{
+            width: 300px;
+            img{
+                object-position: 0 -100px;
+                width: 100%;
+            }
+        }
+    }
+    .back_arrow{
+        display: none;
+        @include onlylange(640px){
+            display: block;
+            margin-top: 15px;
+            margin-left: 16px;
+            a{
+                text-decoration: none;
+                span{
+                    font-family: 'Noah';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: $black;
+                    margin-left: 12px;
+                }
+            }
+        }
     }
 } 
+
+.project01 .slider-project .pj02{
+    div{
+        img{
+            object-position: 0 0px;
+        }
+    }
+}
 
