@@ -23,6 +23,22 @@ $white: #fff;
     font-size: 70px;
     line-height: 87px;
     color: $c;
+    @include onlylange(1440px){
+        font-size: 58px;
+        line-height: 72px;
+    }
+    @include onlylange(1100px){
+        font-size: 48px;
+        line-height: 60px;
+    }
+    @include onlylange(768px){
+        font-size: 38px;
+        line-height: 47px;
+    }
+    @include onlylange(520px){
+        font-size: 24px;
+        line-height: 30px;
+        }
 }
 
 @mixin textstyle-h2($c) {
@@ -41,6 +57,11 @@ $white: #fff;
     font-size: 48px;
     line-height: 60px;
     color: $c;
+    @include onlylange(1100px){
+        font-size: 24px;
+        line-height: 30px;
+    }
+
 }
 
 @mixin textstyle-h4($c) {
@@ -67,6 +88,14 @@ $white: #fff;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+    color: $c;
+}
+@mixin textstyle-h7($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     color: $c;
 }
 
@@ -327,8 +356,8 @@ $white: #fff;
         padding-bottom: 60px;
     }
     @include onlylange(574px){
-        padding-bottom: 0;
-        padding-top: 42px;
+        padding-bottom:81px;
+        padding-top: 45px;
     }
     h3{
         position: relative;
@@ -358,6 +387,7 @@ $white: #fff;
         @include onlylange(1110px){
             margin-bottom: 100px;
             width: 90%;
+            @include textstyle-h6($black);
         }
         @include onlylange(825px){
             margin-top: 30px;
@@ -370,7 +400,7 @@ $white: #fff;
         }
         @include onlylange(420px){
             margin-top: 40px;
-            margin-bottom: 106px;
+            margin-bottom: 56px;
         }
     
     }
@@ -475,13 +505,23 @@ $white: #fff;
     background-repeat: no-repeat;
     background-position: 50%  50%;
     position: relative;
+    @include onlylange(1100px){
+        background-size: 90%;
+        background-position:  auto 0;
+    }
     .wrap_title{
         h3{
             max-width: 998px;
             @include textstyle-h3($black);
             padding-bottom: 199px;
             margin: 0 auto;  
-            text-align: center;          
+            text-align: center;
+            @include onlylange(1100px){
+                padding-bottom: 100px;
+            }
+            @include onlylange(980px){
+                padding-bottom: 66px;
+            }          
             span{
                 font-weight: bold;
             }
@@ -490,31 +530,85 @@ $white: #fff;
             display: flex;
             flex-direction: column;
             margin-left: calc( 50% - 61px);
+            @include onlylange(1100px){
+                margin-left: 48%;
+            }
+            @include onlylange(980px){
+                margin: 0 auto;
+            }
             .title{
                 display: flex;
                 img{
                     width: 50px;
                     height: 50px;
+                    @include onlylange(980px){
+                        width: 32px;
+                        height: 32px;
+                    }
                 }
                 p{
                     width: calc(582px - 137px);
                     margin-left: 35px;
                     @include textstyle-h5($black);
+                        @include onlylange(1440px){
+                            @include textstyle-h6 ($black);
+                            margin-left: 19px;
+                            width: 75%;
+                     }
+                     @include onlylange(1100px){
+                        width: 100%;
+                    }
+                    @include onlylange(540px){
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
                 }
                 &:nth-child(2){
                     margin-left: 49px;
                     margin-top: 158px;
                     margin-bottom: 193px;
+                    @include onlylange(1100px){
+                        margin-top: 100px;
+                        margin-bottom: 100px;
+                        margin-left: 0;
+                    }
+                    @include onlylange(980px){
+                        margin-top: 36px;
+                        margin-bottom: 36px;
+                    }
+
                     p{
                         width: 582px;
+                        @include onlylange(1440px){
+                            width: 75%;
+                        }
+                        @include onlylange(1100px){
+                            width: 100%;
+                        }
                     }
                 }
                 &:nth-child(3){
                     width: 582px;
                     margin-left: 84px;
                     margin-bottom: 181px;
+                    @include onlylange(1100px){
+                        margin-bottom: 90px;
+                        width: 90%;
+                        margin-left: 0;
+                    }
+                    @include onlylange(980px){
+                        margin-bottom: 66px;
+                    }
+
+
                     p{
                         width: 582px;
+                        @include onlylange(1440px){
+                            width: 75%;
+                        }
+                        @include onlylange(1100px){
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -526,16 +620,73 @@ $white: #fff;
         position: absolute;
         bottom: 0;
         left: -7px;
+        @include onlylange(1660px){
+            width: 46%;
+        }
+        @include onlylange(980px){
+            position: relative;
+            margin: 0 auto;
+            left: 0;
+        }
+        @include onlylange(980px){
+            width: 100%;
+        }
+
         p{
             @include textstyle-h5($black);
             margin-bottom: 14px;
-            margin-left: 170px;                      
+            margin-left: 170px;
+            @include onlylange(1440px){
+                margin-left: 25%;
+            }
+            @include onlylange(980px){
+                transform: rotate(270deg); 
+                position: absolute;
+                bottom: 71px;
+                left: -14%; 
+                font-size: 16px;
+                line-height: 20px; 
+                text-align: left;
+            }
+            @include onlylange(768px){
+                left: -17%; 
+            }
+            @include onlylange(768px){
+                left: -20%; 
+            }
+            @include onlylange(540px){
+                left: -62px; 
+                margin: 0;
+                padding: 0;
+                bottom: 84px;
+                
+            }
+
         }
         img{
             &:nth-child(2){
                 width: 701px;
                 height: 526px;
                 object-fit: cover;
+                @include onlylange(1660px){
+                    width: 90%;
+                }
+                @include onlylange(1440px){
+                    height: 420px;
+                }
+                @include onlylange(1100px){
+                    height: 330px;
+                }
+                @include onlylange(980px){
+                    height: 236px;
+                    width: 80%;
+                }
+                @include onlylange(540px){
+                    width: 100%;
+                }
+                
+
+        
             }
             &:nth-child(3){
                 width: 536px;
@@ -544,6 +695,24 @@ $white: #fff;
                 display: block;
                 margin-left: auto;
                 margin-top: -53px;
+                @include onlylange(1440px){
+                    width: 75%;
+                    height: 290px;
+                }
+                @include onlylange(1100px){
+                    height: 230px;
+                }
+                @include onlylange(980px){
+                    height: 204px;
+                    margin-top: -11px;
+                }
+                @include onlylange(540px){
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding-left: 48px;;
+                }
+        
+
             }
         } 
     }
