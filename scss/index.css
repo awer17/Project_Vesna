@@ -1078,7 +1078,7 @@
 }
 
 /*servis list*/
-.servis h2 {
+.servis div h2 {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -1091,7 +1091,32 @@
   margin-bottom: 65px;
 }
 
-.servis .war_servis {
+@media only screen and (max-width: 1440px) {
+  .servis div h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .servis div h2 {
+    font-size: 38px;
+    line-height: 47px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .servis div h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 88px;
+    margin-bottom: 30px;
+  }
+}
+
+.servis div .war_servis {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 399px 399px 399px;
@@ -1103,7 +1128,27 @@
           justify-content: center;
 }
 
-.servis .war_servis h4 {
+@media only screen and (max-width: 1440px) {
+  .servis div .war_servis {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-column-gap: 5%;
+            column-gap: 5%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .servis div .war_servis {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    row-gap: 33px;
+    width: 100%;
+  }
+}
+
+.servis div .war_servis h4 {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -1114,12 +1159,40 @@
   margin-bottom: 56px;
 }
 
-.servis .war_servis ul {
+@media only screen and (max-width: 1440px) {
+  .servis div .war_servis h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .servis div .war_servis h4 {
+    margin-left: 7px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .servis div .war_servis img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.servis div .war_servis ul {
   margin-left: 41px;
   list-style-type: disc;
 }
 
-.servis .war_servis ul li {
+@media only screen and (max-width: 768px) {
+  .servis div .war_servis ul {
+    margin-left: 13px;
+  }
+}
+
+.servis div .war_servis ul li {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -1129,7 +1202,15 @@
   margin-bottom: 30px;
 }
 
-.servis .war_servis ul li:last-child {
+@media only screen and (max-width: 768px) {
+  .servis div .war_servis ul li {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+}
+
+.servis div .war_servis ul li:last-child {
   margin-bottom: 0;
 }
 
@@ -1138,7 +1219,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
-  padding: 15px 77px 15px 73px;
+  width: 311px;
+  text-align: center;
+  padding: 15px 0 15px 0;
   background: #545A2F;
   font-family: 'Noah';
   font-style: normal;
@@ -1146,12 +1229,12 @@
   font-size: 24px;
   line-height: 30px;
   color: #fff;
-  width: 311px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 58px;
+  margin-top: 41px;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+  border: none;
 }
 
 .servis a:hover {
@@ -1173,6 +1256,12 @@
   top: -593px;
 }
 
+@media only screen and (max-width: 1490px) {
+  .instruction .img-left {
+    width: 75%;
+  }
+}
+
 .instruction .img-right {
   position: absolute;
   -o-object-fit: cover;
@@ -1181,6 +1270,12 @@
      object-position: 324px 0;
   right: 0;
   top: -384px;
+}
+
+@media only screen and (max-width: 1490px) {
+  .instruction .img-right {
+    width: 65%;
+  }
 }
 
 .instruction .img-bg {
@@ -1193,16 +1288,48 @@
 
 .instruction .img-book {
   width: 1309px;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: absolute;
   top: -36.39%;
   left: -215px;
   height: 876px;
 }
 
+@media only screen and (max-width: 1740px) {
+  .instruction .img-book {
+    width: 1100px;
+    height: 876px;
+  }
+}
+
+@media only screen and (max-width: 1490px) {
+  .instruction .img-book {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1290px) {
+  .instruction .img-book {
+    width: 700px;
+    height: 700px;
+    top: -3.39%;
+    left: -182px;
+  }
+}
+
 .instruction .wrapper_form {
   margin-top: 305px;
   margin-left: 50%;
   margin-bottom: 406px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .instruction .wrapper_form {
+    margin: 0 auto;
+    margin-top: 138px;
+    margin-bottom: 26px;
+  }
 }
 
 .instruction .wrapper_form h2 {
@@ -1215,6 +1342,35 @@
   line-height: 72px;
   color: #1A1A18;
   width: 559px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .instruction .wrapper_form h2 {
+    font-size: 48px;
+    line-height: 60px;
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .instruction .wrapper_form h2 {
+    font-size: 38px;
+    line-height: 47px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .instruction .wrapper_form h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .instruction .wrapper_form h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .instruction .wrapper_form p {
@@ -1230,6 +1386,15 @@
   color: #1A1A18;
 }
 
+@media only screen and (max-width: 1024px) {
+  .instruction .wrapper_form p {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 240px;
+  }
+}
+
 .instruction .wrapper_form form {
   position: relative;
   z-index: 1;
@@ -1243,6 +1408,12 @@
   width: 601px;
   background: #FFFFFF;
   margin-bottom: 19px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .instruction .wrapper_form form .mail {
+    width: 85%;
+  }
 }
 
 .instruction .wrapper_form form .mail::-webkit-input-placeholder {
@@ -1281,12 +1452,23 @@
   color: #1A1A18;
 }
 
-.instruction .wrapper_form form .checkbox {
+.instruction .wrapper_form form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.instruction .wrapper_form form div .checkbox {
   width: 20px;
   height: 20px;
 }
 
-.instruction .wrapper_form form label {
+.instruction .wrapper_form form div label {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
