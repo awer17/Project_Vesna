@@ -871,7 +871,7 @@
   -o-object-position: -577px 0;
      object-position: -577px 0;
   left: 0;
-  top: -338px;
+  top: -593px;
 }
 
 .instruction .img-right {
@@ -881,7 +881,7 @@
   -o-object-position: 324px 0;
      object-position: 324px 0;
   right: 0;
-  top: -109px;
+  top: -384px;
 }
 
 .instruction .img-bg {
@@ -895,7 +895,7 @@
 .instruction .img-book {
   width: 1309px;
   position: absolute;
-  top: -43.39%;
+  top: -36.39%;
   left: -215px;
   height: 876px;
 }

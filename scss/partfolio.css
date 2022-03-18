@@ -1,0 +1,41 @@
+/*@mixin*/
+/* Hero */
+.hero {
+  background-image: url(../images/img/portfolio-01.jpg);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: 100%;
+  width: 100%;
+  margin-top: -179px;
+}
+
+.hero .wrap_bg {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5.85%, rgba(0, 0, 0, 0.5)), color-stop(61.53%, rgba(134, 134, 134, 0))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(.jpg);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
+  background-size: auto;
+  position: relative;
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+
+.hero .wrap_bg h1 {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 87px;
+  color: #fff;
+  text-align: center;
+}
+
+.hero .wrap_bg h4 {
+  margin-top: 15px;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 47px;
+  color: #fff;
+  text-align: center;
+}
+/*# sourceMappingURL=partfolio.css.map */

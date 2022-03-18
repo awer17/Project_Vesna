@@ -1,0 +1,101 @@
+$green: #545A2F;
+$pale_green: #99A18E;
+$brown: #63533E;
+$black: #1A1A18;
+$white: #fff;
+
+
+
+/*@mixin*/
+
+@mixin onlylange($w) {
+    @media only screen and (max-width: $w)
+    {
+        @content;       
+    }
+}
+
+
+@mixin textstyle-h1($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 87px;
+    color: $c;
+}
+
+@mixin textstyle-h2($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 72px;
+    color: $c;
+}
+
+@mixin textstyle-h3($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: $c;
+}
+
+@mixin textstyle-h4($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 47px;
+    color: $c;
+}
+
+@mixin textstyle-h5($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: $c;
+}
+
+@mixin textstyle-h6($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $c;
+}
+
+
+
+/* Hero */
+
+
+.hero{
+    background-image: url(../images/img/portfolio-01.jpg);
+    background-repeat: no-repeat;
+    background-position:0% 50%;
+    background-size: 100%;
+    width: 100%;
+    margin-top: -179px;
+    .wrap_bg{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
+        background-size: auto;
+        position: relative;
+        padding-top: 250px;
+        padding-bottom: 100px;
+        h1{
+            @include textstyle-h1($white);
+            text-align: center;
+        }
+        h4{margin-top: 15px;
+            @include textstyle-h4($white);
+            text-align: center;
+        }
+    }
+    
+}
