@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vesna</title>
+    <link  rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
@@ -103,14 +105,29 @@
         </section>
 
         <section class="project01">
+            <div class="back_arrow">
+                <a href="index.html">
+                    <img src="images/svg/back_arrow.svg" alt="back_arrow">
+                    <span>Назад</span>
+                </a>
+
+            </div>
             <h2>Lorem ipsum</h2>
             <div class="title">
-                <p>Реализация</p>
-                <p>Площадь</p>
-                <p>Месторасположение</p>
-                <h5>2018-2019</h5>
-                <h5>35 соток</h5>
-                <h5>Ленинградская область</h5>
+                <div>
+                    <p>Реализация</p>
+                    <h5>2018-2019</h5>
+                </div>
+
+               <div class="area">
+                    <p>Площадь</p>
+                    <h5>35 соток</h5>
+               </div>
+
+                <div>
+                    <p>Месторасположение</p>
+                    <h5>Ленинградская область</h5>
+                </div>
             </div>
             <div class="title-img">
                 <img src="images/img/info-03.jpg" alt="portfolio-03">
@@ -121,7 +138,23 @@
                 </div>
                 <img src="images/img/portfolio-05.jpg" alt="portfolio-03">
             </div>
-            <a href="#">Посмотреть весь проект</a>
+            <div class="swiper mySwiper slider-project">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="sl01" src="images/img/slider1/slider-img-1.JPG" alt="portfolio-03">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img/slider1/slider-img-3.JPG" alt="portfolio-03">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img/slider1/slider-img-4.JPG" alt="portfolio-03">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/img/slider1/slider-img-2.JPG" alt="portfolio-03">
+                  </div>
+                </div>
+              </div>
+            <a class="btn" href="#">Посмотреть весь проект</a>
         </section>
 
 
@@ -156,8 +189,18 @@
             </div>            
         </footer>
     </div>
-    
-?    <script src="js/cart_contakts.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: "auto",
+          spaceBetween: 3,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+        <script src="js/cart_contakts.js"></script>
     <script src="js/burger_menu.js"></script>
     <script src="js/col.js"></script>
 </body>
