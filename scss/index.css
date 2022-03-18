@@ -1262,6 +1262,19 @@
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .instruction .img-left {
+    -o-object-position: -451px 0;
+       object-position: -451px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .instruction .img-left {
+    display: none;
+  }
+}
+
 .instruction .img-right {
   position: absolute;
   -o-object-fit: cover;
@@ -1278,6 +1291,12 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .instruction .img-right {
+    display: none;
+  }
+}
+
 .instruction .img-bg {
   position: absolute;
   width: 100%;
@@ -1286,35 +1305,10 @@
   background: rgba(153, 161, 142, 0.3);
 }
 
-.instruction .img-book {
-  width: 1309px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  top: -36.39%;
-  left: -215px;
-  height: 876px;
-}
-
-@media only screen and (max-width: 1740px) {
-  .instruction .img-book {
-    width: 1100px;
-    height: 876px;
-  }
-}
-
-@media only screen and (max-width: 1490px) {
-  .instruction .img-book {
-    width: 800px;
-  }
-}
-
-@media only screen and (max-width: 1290px) {
-  .instruction .img-book {
-    width: 700px;
-    height: 700px;
-    top: -3.39%;
-    left: -182px;
+@media only screen and (max-width: 1024px) {
+  .instruction .img-bg {
+    height: 660px;
+    top: 113px;
   }
 }
 
@@ -1329,6 +1323,66 @@
     margin: 0 auto;
     margin-top: 138px;
     margin-bottom: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.instruction .wrapper_form .img-book {
+  width: 1309px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: -36.39%;
+  left: -215px;
+  height: 876px;
+}
+
+@media only screen and (max-width: 1740px) {
+  .instruction .wrapper_form .img-book {
+    width: 1100px;
+    height: 876px;
+  }
+}
+
+@media only screen and (max-width: 1490px) {
+  .instruction .wrapper_form .img-book {
+    width: 800px;
+  }
+}
+
+@media only screen and (max-width: 1290px) {
+  .instruction .wrapper_form .img-book {
+    width: 700px;
+    height: 700px;
+    top: -3.39%;
+    left: -182px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .instruction .wrapper_form .img-book {
+    position: static;
+    width: 402px;
+    height: 408px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .instruction .wrapper_form .img-book {
+    margin-top: -27px;
+    width: 250px;
+    height: 273px;
   }
 }
 
@@ -1373,6 +1427,12 @@
   }
 }
 
+@media only screen and (max-width: 470px) {
+  .instruction .wrapper_form h2 {
+    width: 73%;
+  }
+}
+
 .instruction .wrapper_form p {
   position: relative;
   z-index: 1;
@@ -1390,14 +1450,22 @@
   .instruction .wrapper_form p {
     margin: 0 auto;
     text-align: center;
-    margin-top: 75px;
-    margin-bottom: 240px;
+    margin-top: 39px;
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .instruction .wrapper_form p {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
 .instruction .wrapper_form form {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 .instruction .wrapper_form form .mail {
@@ -1413,6 +1481,23 @@
 @media only screen and (max-width: 1440px) {
   .instruction .wrapper_form form .mail {
     width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .instruction .wrapper_form form .mail {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .instruction .wrapper_form form .mail {
+    margin-top: -11px;
+    width: 84%;
+    padding-left: 13px;
+    padding-top: 18px;
+    padding-bottom: 11px;
   }
 }
 
@@ -1452,6 +1537,25 @@
   color: #1A1A18;
 }
 
+@media only screen and (max-width: 470px) {
+  .instruction .wrapper_form form .mail::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .instruction .wrapper_form form .mail:-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .instruction .wrapper_form form .mail::-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .instruction .wrapper_form form .mail::placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
 .instruction .wrapper_form form div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1461,6 +1565,25 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1024px) {
+  .instruction .wrapper_form form div {
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    width: 300px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .instruction .wrapper_form form div {
+    width: 288px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
 }
 
 .instruction .wrapper_form form div .checkbox {
@@ -1477,6 +1600,26 @@
   margin-left: 24px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .instruction .wrapper_form form div label {
+    margin-left: 10px;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .instruction .wrapper_form form div label {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .instruction .wrapper_form form div label {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
 .instruction .wrapper_form form button {
   display: block;
   padding: 11px 69px 12px 61px;
@@ -1491,6 +1634,12 @@
   margin-top: 25px;
   -webkit-transition: 0.8s;
   transition: 0.8s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .instruction .wrapper_form form button {
+    margin: 0 auto;
+  }
 }
 
 .instruction .wrapper_form form button:hover {
