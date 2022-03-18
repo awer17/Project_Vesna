@@ -477,13 +477,13 @@
   position: relative;
   margin: 0 auto;
   margin-top: 53px;
-  margin-bottom: 287px;
+  margin-bottom: 200px;
   width: 856px;
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 24px;
+  line-height: 30px;
   color: #1A1A18;
 }
 
@@ -674,7 +674,7 @@
 }
 
 .excellence .wrap_title h3 {
-  max-width: 1160px;
+  max-width: 998px;
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -736,7 +736,7 @@
 .excellence .wrap_title .items_excellence .title:nth-child(3) {
   width: 582px;
   margin-left: 84px;
-  margin-bottom: 185px;
+  margin-bottom: 181px;
 }
 
 .excellence .wrap_title .items_excellence .title:nth-child(3) p {
@@ -816,6 +816,7 @@
 }
 
 .servis .war_servis ul {
+  margin-left: 41px;
   list-style-type: disc;
 }
 
@@ -826,7 +827,7 @@
   font-size: 24px;
   line-height: 30px;
   color: #1A1A18;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .servis .war_servis ul li:last-child {
@@ -849,6 +850,169 @@
   width: 311px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 58px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.servis a:hover {
+  background: #99A18E;
+}
+
+/*instruction*/
+.instruction {
+  position: relative;
+}
+
+.instruction .img-left {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: -577px 0;
+     object-position: -577px 0;
+  left: 0;
+  top: -338px;
+}
+
+.instruction .img-right {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 324px 0;
+     object-position: 324px 0;
+  right: 0;
+  top: -109px;
+}
+
+.instruction .img-bg {
+  position: absolute;
+  width: 100%;
+  height: 333px;
+  top: 39.76%;
+  background: rgba(153, 161, 142, 0.3);
+}
+
+.instruction .img-book {
+  width: 1309px;
+  position: absolute;
+  top: -43.39%;
+  left: -215px;
+  height: 876px;
+}
+
+.instruction .wrapper_form {
+  margin-top: 305px;
+  margin-left: 50%;
+  margin-bottom: 406px;
+}
+
+.instruction .wrapper_form h2 {
+  position: relative;
+  z-index: 1;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 72px;
+  color: #1A1A18;
+  width: 559px;
+}
+
+.instruction .wrapper_form p {
+  position: relative;
+  z-index: 1;
+  margin-top: 62px;
+  margin-bottom: 24px;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+}
+
+.instruction .wrapper_form form {
+  position: relative;
+  z-index: 1;
+}
+
+.instruction .wrapper_form form .mail {
+  display: block;
+  padding-top: 18px;
+  padding-bottom: 12px;
+  padding-left: 31px;
+  width: 601px;
+  background: #FFFFFF;
+  margin-bottom: 19px;
+}
+
+.instruction .wrapper_form form .mail::-webkit-input-placeholder {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+}
+
+.instruction .wrapper_form form .mail:-ms-input-placeholder {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+}
+
+.instruction .wrapper_form form .mail::-ms-input-placeholder {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+}
+
+.instruction .wrapper_form form .mail::placeholder {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1A1A18;
+}
+
+.instruction .wrapper_form form .checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.instruction .wrapper_form form label {
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 24px;
+}
+
+.instruction .wrapper_form form button {
+  display: block;
+  padding: 11px 69px 12px 61px;
+  background: #545A2F;
+  font-family: 'Noah';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  margin-top: 25px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.instruction .wrapper_form form button:hover {
+  background: #99A18E;
 }
 /*# sourceMappingURL=index.css.map */
