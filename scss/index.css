@@ -1154,7 +1154,14 @@
   }
 }
 
-.servis .wrap-serwis .war_servis h4 {
+@media only screen and (max-width: 768px) {
+  .servis .wrap-serwis .war_servis .items {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.servis .wrap-serwis .war_servis .items h4 {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -1166,14 +1173,14 @@
 }
 
 @media only screen and (max-width: 1440px) {
-  .servis .wrap-serwis .war_servis h4 {
+  .servis .wrap-serwis .war_servis .items h4 {
     font-size: 24px;
     line-height: 30px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .servis .wrap-serwis .war_servis h4 {
+  .servis .wrap-serwis .war_servis .items h4 {
     margin-left: 7px;
     margin-top: 8px;
     margin-bottom: 20px;
@@ -1181,24 +1188,24 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .servis .wrap-serwis .war_servis img {
+  .servis .wrap-serwis .war_servis .items img {
     width: 60px;
     height: 60px;
   }
 }
 
-.servis .wrap-serwis .war_servis ul {
+.servis .wrap-serwis .war_servis .items ul {
   margin-left: 41px;
   list-style-type: disc;
 }
 
 @media only screen and (max-width: 768px) {
-  .servis .wrap-serwis .war_servis ul {
-    margin-left: 13px;
+  .servis .wrap-serwis .war_servis .items ul {
+    margin-left: 32px;
   }
 }
 
-.servis .wrap-serwis .war_servis ul li {
+.servis .wrap-serwis .war_servis .items ul li {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -1209,14 +1216,14 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .servis .wrap-serwis .war_servis ul li {
+  .servis .wrap-serwis .war_servis .items ul li {
     font-size: 18px;
-    line-height: 22px;
+    line-height: 18px;
     margin-bottom: 16px;
   }
 }
 
-.servis .wrap-serwis .war_servis ul li:last-child {
+.servis .wrap-serwis .war_servis .items ul li:last-child {
   margin-bottom: 0;
 }
 
@@ -1227,7 +1234,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
-  width: 311px;
+  width: 300px;
   text-align: center;
   padding: 15px 0 15px 0;
   background: #545A2F;
@@ -1243,6 +1250,12 @@
   -webkit-transition: 0.8s;
   transition: 0.8s;
   border: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .servis a {
+    width: 100%;
+  }
 }
 
 .servis a:hover {
@@ -1316,7 +1329,7 @@
 @media only screen and (max-width: 1024px) {
   .instruction .img-bg {
     height: 660px;
-    top: 113px;
+    top: 128px;
   }
 }
 

@@ -14,9 +14,27 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
   background-size: auto;
   position: relative;
-  padding-top: 250px;
+  padding-top: 309px;
   padding-bottom: 100px;
   margin-bottom: 130px;
+}
+
+@media only screen and (max-width: 1180px) {
+  .hero .wrap_bg {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero .wrap_bg {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .hero .wrap_bg {
+    padding-bottom: 12px;
+  }
 }
 
 .hero .wrap_bg h1 {
@@ -99,11 +117,7 @@
 }
 
 /*services*/
-body > div > section.hero {
-  margin-top: -309px;
-}
-
-.wrap {
+.servis-wrap {
   width: 1336px;
   margin: 0 auto;
   display: -ms-grid;
@@ -113,16 +127,17 @@ body > div > section.hero {
   -ms-grid-rows: 502px 60px;
       grid-template-rows: 502px 60px;
   margin-bottom: 130px;
+  margin-top: 120px;
 }
 
 @media only screen and (max-width: 1440px) {
-  .wrap {
+  .servis-wrap {
     width: 90%;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  .wrap {
+  .servis-wrap {
     -ms-grid-columns: 1fr 47%;
         grid-template-columns: 1fr 47%;
     margin-top: 120px;
@@ -130,7 +145,7 @@ body > div > section.hero {
 }
 
 @media only screen and (max-width: 1024px) {
-  .wrap {
+  .servis-wrap {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 235px 268px 86px;
@@ -141,7 +156,7 @@ body > div > section.hero {
 }
 
 @media only screen and (max-width: 550px) {
-  .wrap {
+  .servis-wrap {
     -ms-grid-rows: 332px 268px 86px;
         grid-template-rows: 332px 268px 86px;
     margin-top: 60px;
@@ -151,7 +166,7 @@ body > div > section.hero {
 }
 
 @media only screen and (max-width: 1024px) {
-  .wrap .title {
+  .servis-wrap .title {
     -ms-grid-row: 1;
     grid-row: 1;
     margin-bottom: 36px;
@@ -160,12 +175,12 @@ body > div > section.hero {
 }
 
 @media only screen and (max-width: 550px) {
-  .wrap .title {
+  .servis-wrap .title {
     width: 288px;
   }
 }
 
-.wrap .title h2 {
+.servis-wrap .title h2 {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -177,41 +192,41 @@ body > div > section.hero {
 }
 
 @media only screen and (max-width: 1440px) {
-  .wrap .title h2 {
+  .servis-wrap .title h2 {
     font-size: 48px;
     line-height: 60px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .wrap .title h2 {
+  .servis-wrap .title h2 {
     font-size: 38px;
     line-height: 47px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .wrap .title h2 {
+  .servis-wrap .title h2 {
     font-size: 24px;
     line-height: 30px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  .wrap .title h2 {
+  .servis-wrap .title h2 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  .wrap .title h2 {
+  .servis-wrap .title h2 {
     margin: 0 auto;
     margin-bottom: 26px;
   }
 }
 
-.wrap .title h5 {
+.servis-wrap .title h5 {
   font-family: 'Noah';
   font-style: normal;
   font-weight: 400;
@@ -222,39 +237,45 @@ body > div > section.hero {
 }
 
 @media only screen and (max-width: 1024px) {
-  .wrap .title h5 {
+  .servis-wrap .title h5 {
     font-size: 18px;
     line-height: 22px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .wrap .title h5 {
+  .servis-wrap .title h5 {
     font-size: 16px;
     line-height: 20px;
   }
 }
 
 @media only screen and (max-width: 1440px) {
-  .wrap .title h5 {
-    width: 400px;
+  .servis-wrap .title h5 {
+    width: 475px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .servis-wrap .title h5 {
+    width: 410px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .wrap .title h5 {
+  .servis-wrap .title h5 {
     width: 95%;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  .wrap .title h5 {
+  .servis-wrap .title h5 {
     width: 100%;
     margin-bottom: 36px;
   }
 }
 
-.wrap img {
+.servis-wrap img {
   width: 100%;
   height: 100%;
   -ms-grid-column: 2;
@@ -267,7 +288,7 @@ body > div > section.hero {
 }
 
 @media only screen and (max-width: 1024px) {
-  .wrap img {
+  .servis-wrap img {
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 2;
@@ -275,7 +296,7 @@ body > div > section.hero {
   }
 }
 
-.wrap a.btn-servis {
+.servis-wrap a.btn-servis {
   display: block;
   padding: 16px 0 12px 0;
   width: 311px;
@@ -298,28 +319,28 @@ body > div > section.hero {
 }
 
 @media only screen and (max-width: 1024px) {
-  .wrap a.btn-servis {
+  .servis-wrap a.btn-servis {
     font-size: 18px;
     line-height: 22px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .wrap a.btn-servis {
+  .servis-wrap a.btn-servis {
     font-size: 16px;
     line-height: 20px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .wrap a.btn-servis {
+  .servis-wrap a.btn-servis {
     -ms-grid-row: 3;
     grid-row: 3;
     margin-top: 26px;
   }
 }
 
-.wrap a.btn-servis:hover {
+.servis-wrap a.btn-servis:hover {
   background: #545A2F;
   color: #fff;
 }
