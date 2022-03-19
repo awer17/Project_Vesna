@@ -70,6 +70,10 @@ body._lock{
     }      
 }
 
+html{
+    scroll-behavior: smooth;
+  }
+
 
 
 /*header*/
@@ -357,7 +361,7 @@ header .wrap .menu_icon._active{
     display: flex;
     justify-content: center;
     align-items: center;
-    top: -110%;
+    top: -200%;
     left: 0;
     width: 100%;
     height: 100%;

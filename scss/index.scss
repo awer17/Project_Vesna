@@ -591,6 +591,10 @@ $white: #fff;
                     width: 582px;
                     margin-left: 84px;
                     margin-bottom: 181px;
+                    @include onlylange(1440px){
+                        width: 90%;
+                    }
+
                     @include onlylange(1100px){
                         margin-bottom: 90px;
                         width: 90%;
@@ -599,8 +603,6 @@ $white: #fff;
                     @include onlylange(980px){
                         margin-bottom: 66px;
                     }
-
-
                     p{
                         width: 582px;
                         @include onlylange(1440px){
@@ -725,7 +727,7 @@ $white: #fff;
 
 
 .servis{
-    div{
+    .wrap-serwis{
             h2{
         @include textstyle-h2($black);
         margin-top: 252px;
@@ -810,6 +812,8 @@ $white: #fff;
 
     }
     a{
+        position: relative;
+        z-index: 10;
         display: block;
         box-sizing: border-box;
         text-decoration: none;

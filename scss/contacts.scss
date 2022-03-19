@@ -1,0 +1,175 @@
+$green: #545A2F;
+$pale_green: #99A18E;
+$brown: #63533E;
+$black: #1A1A18;
+$white: #fff;
+
+
+
+/*@mixin*/
+
+@mixin onlylange($w) {
+    @media only screen and (max-width: $w)
+    {
+        @content;       
+    }
+}
+
+
+@mixin textstyle-h1($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 87px;
+    color: $c;
+    @include onlylange(1440px){
+        font-size: 58px;
+        line-height: 72px;
+    }
+    @include onlylange(1100px){
+        font-size: 48px;
+        line-height: 60px;
+    }
+    @include onlylange(768px){
+        font-size: 38px;
+        line-height: 47px;
+    }
+    @include onlylange(520px){
+        font-size: 24px;
+        line-height: 30px;
+        }
+}
+
+@mixin textstyle-h2($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 72px;
+    color: $c;
+    @include onlylange(1440px){
+        font-size: 48px;
+        line-height: 60px;
+    }
+    @include onlylange(1100px){
+        font-size: 38px;
+        line-height: 47px;
+    }
+    @include onlylange(768px){
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@mixin textstyle-h3($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: $c;
+    @include onlylange(1440px){
+        font-size: 38px;
+        line-height: 47px;
+    }
+    @include onlylange(1100px){
+        font-size: 24x;
+        line-height: 30px;
+    }
+}
+
+@mixin textstyle-h4($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 47px;
+    color: $c;
+    @include onlylange(1440px){
+        font-size: 24px;
+        line-height: 30px;
+    }
+    @include onlylange(1100px){
+        font-size: 18x;
+        line-height: 22px;
+    }
+    @include onlylange(768px){
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@mixin textstyle-h5($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: $c;
+}
+
+@mixin textstyle-h6($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $c;
+}
+@mixin textstyle-h7($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $c;
+}
+
+
+
+/* Hero */
+
+
+.hero{
+    background-image: url(../images/img/portfolio-01.jpg);
+    background-repeat: no-repeat;
+    background-position:0% 50%;
+    background-size: 100%;
+    width: 100%;
+    margin-top: -179px;
+    .wrap_bg{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
+        background-size: auto;
+        position: relative;
+        padding-top: 250px;
+        padding-bottom: 100px;
+        h1{
+            @include textstyle-h1($white);
+            text-align: center;            
+        }
+        // a{
+        //     display: block;
+        //     padding: 11px 0 12px 0;
+        //     width: 311px;
+        //     background: none;
+        //     text-decoration: none;
+        //     border: 1px solid #FFFFFF;
+        //     box-sizing: border-box;
+        //     @include textstyle-h5($white);
+        //     text-align: center;
+        //     transition: 0.8s;
+        //     margin: 0 auto;
+        //     margin-top: 44px;
+
+
+        //     &:hover{
+        //         background: $white;
+        //         color: $black;
+        //     }
+
+
+        // }
+    }
+    
+}

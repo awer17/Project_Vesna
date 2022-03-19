@@ -1,0 +1,328 @@
+$green: #545A2F;
+$pale_green: #99A18E;
+$brown: #63533E;
+$black: #1A1A18;
+$white: #fff;
+
+
+
+/*@mixin*/
+
+@mixin onlylange($w) {
+    @media only screen and (max-width: $w)
+    {
+        @content;       
+    }
+}
+
+
+@mixin textstyle-h1($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 87px;
+    color: $c;
+    @include onlylange(1440px){
+        font-size: 58px;
+        line-height: 72px;
+    }
+    @include onlylange(1100px){
+        font-size: 48px;
+        line-height: 60px;
+    }
+    @include onlylange(768px){
+        font-size: 38px;
+        line-height: 47px;
+    }
+    @include onlylange(520px){
+        font-size: 24px;
+        line-height: 30px;
+        }
+}
+
+@mixin textstyle-h2($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 72px;
+    color: $c;
+    @include onlylange(1440px){
+        font-size: 48px;
+        line-height: 60px;
+    }
+    @include onlylange(1024px){
+        font-size: 38px;
+        line-height: 47px;
+    }
+
+    @include onlylange(768px){
+        font-size: 24px;
+        line-height: 30px;
+        }
+}
+
+@mixin textstyle-h3($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    color: $c;
+    @include onlylange(1440px){
+        font-size: 38px;
+        line-height: 47px;
+    }
+    @include onlylange(1100px){
+        font-size: 24x;
+        line-height: 30px;
+    }
+}
+
+@mixin textstyle-h4($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 47px;
+    color: $c;
+    @include onlylange(1440px){
+        font-size: 24px;
+        line-height: 30px;
+    }
+    @include onlylange(1100px){
+        font-size: 18x;
+        line-height: 22px;
+    }
+    @include onlylange(768px){
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@mixin textstyle-h5($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: $c;
+    @include onlylange(1024px){
+        font-size: 18px;
+        line-height: 22px;
+    
+    }
+    @include onlylange(768px){
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+}
+
+@mixin textstyle-h6($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $c;
+}
+@mixin textstyle-h7($c) {
+    font-family: 'Noah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $c;
+}
+
+
+
+/* Hero */
+
+
+.hero{
+    background-image: url(../images/img/portfolio-01.jpg);
+    background-repeat: no-repeat;
+    background-position:0% 50%;
+    background-size: 100%;
+    width: 100%;
+    margin-top: -179px;
+    .wrap_bg{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 5.85%, rgba(134, 134, 134, 0) 61.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(.jpg);
+        background-size: auto;
+        position: relative;
+        padding-top: 250px;
+        padding-bottom: 100px;
+        margin-bottom: 130px;
+        h1{
+            @include textstyle-h1($white);
+            text-align: center;            
+        }
+        a{
+            display: block;
+            padding: 11px 0 12px 0;
+            width: 311px;
+            background: none;
+            text-decoration: none;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            @include textstyle-h5($white);
+            text-align: center;
+            transition: 0.8s;
+            margin: 0 auto;
+            margin-top: 44px;
+            &:hover{
+                background: $white;
+                color: $black;
+            }
+        }
+    }
+}
+
+
+
+/*services*/
+
+body > div > section.hero{
+    margin-top: -309px;
+}
+
+.wrap{
+    width: 1336px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 502px 60px;
+    margin-bottom: 130px;
+
+    @include onlylange(1440px){
+        width: 90%;
+    }
+    @include onlylange(1200px){
+        grid-template-columns: 1fr 47%;
+        margin-top: 120px;
+
+    }
+    @include onlylange(1024px){
+        grid-template-columns: 1fr;
+        grid-template-rows: 235px 268px 86px;
+        justify-items: center;
+        margin-top: 80px;
+
+    }
+    @include onlylange(550px){
+        grid-template-rows: 332px 268px 86px;
+        margin-top: 60px;
+        width: 100%;
+        margin-bottom: 39px;
+
+
+    }
+
+    .title{
+        @include onlylange(1024px){
+            grid-row: 1;
+            margin-bottom: 36px;
+            width: 100%;
+            
+        }
+
+        @include onlylange(550px){
+            width: 288px;
+        }
+
+    
+        h2{
+            @include textstyle-h2($black);
+            margin-top: 37px;
+            margin-bottom: 56px;
+            @include onlylange(1200px){
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            @include onlylange(550px){
+                margin: 0 auto;
+                margin-bottom: 26px; 
+       
+            }
+        }
+        h5{
+            @include textstyle-h5($black);
+            width: 580px;
+            @include onlylange(1440px){
+                width: 400px;
+            }
+            @include onlylange(1024px){
+                width: 95%;
+            }
+
+            @include onlylange(550px){
+                width: 100%;
+                margin-bottom: 36px;
+            }
+        }
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        grid-column: 2;
+        grid-row: 1/span 2;
+        object-fit: cover;
+        @include onlylange(1024px){
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+    }
+    a.btn-servis{
+        display:block;
+        padding: 16px 0 12px 0;
+        width: 311px;
+        background: none;
+        text-decoration: none;
+        border: 1px solid #545A2F;
+        box-sizing: border-box;
+        @include textstyle-h5($black);
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+        transition: 0.8s;
+
+        @include onlylange(1024px){
+            grid-row: 3;
+            margin-top: 26px;
+        }
+
+        &:hover{
+            background: $green;
+            color: $white;
+        }
+    }
+}
+
+
+body > div > section.wrapper-services > div:nth-child(2){
+    justify-items: end;
+    @include onlylange(1024px){
+        justify-items: center;
+    }
+
+    img{
+    grid-column: 1;
+    }
+}
+body > div > section.wrapper-services > div:nth-child(4){
+    justify-items: end;
+    @include onlylange(1024px){
+        justify-items: center;
+    }
+
+    img{
+    grid-column: 1;
+    }
+}
+
+
